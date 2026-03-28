@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 生成AI最新情報</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+            background: #0a0a14;
+            color: #e2e2f0;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #13131f 0%, #1a1a3e 100%);
+            padding: 1.2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #2a2a5a;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 { font-size: 1.3rem; color: #90c0ff; }
+        header .meta { font-size: 0.75rem; color: #666; margin-top: 0.3rem; }
+        .container { max-width: 640px; margin: 0 auto; padding: 1rem; }
+        .section-title {
+            font-size: 0.78rem;
+            color: #90c0ff;
+            letter-spacing: 0.08em;
+            margin: 1.5rem 0 0.8rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid #2a2a5a;
+        }
+        .news-card {
+            background: #13131f;
+            border: 1px solid #252545;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 0.8rem;
+        }
+        .news-card .title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #e2e2f0;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+        .news-card .summary {
+            font-size: 0.82rem;
+            color: #9090aa;
+            line-height: 1.7;
+        }
+        .news-card .foot {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.7rem;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background: #1a2a4a;
+            color: #90c0ff;
+            font-size: 0.68rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 20px;
+        }
+        .source { font-size: 0.72rem; color: #555; }
+        .placeholder {
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        .placeholder .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .placeholder p { color: #555; font-size: 0.88rem; line-height: 1.8; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #444;
+            font-size: 0.72rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🤖 生成AI最新情報</h1>
+        <div class="meta">毎朝6時自動更新 — Powered by Claude</div>
+    </header>
+    <div class="container">
+        <div class="placeholder">
+            <div class="icon">🛰️</div>
+            <p>初回の配信は明朝6時（JST）の予定です<br>
+            Claudeエージェントが最新のAI情報を自動収集・配信します</p>
+        </div>
+    </div>
+    <footer>生成AI最新情報 — 自動更新システム</footer>
+</body>
+</html>
