@@ -1,168 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🤖 生成AI最新情報</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
-            background: #0a0a14;
-            color: #e2e2f0;
-            min-height: 100vh;
-        }
-        header {
-            background: linear-gradient(135deg, #13131f 0%, #1a1a3e 100%);
-            padding: 1.2rem 1rem;
-            text-align: center;
-            border-bottom: 1px solid #2a2a5a;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        header h1 { font-size: 1.3rem; color: #90c0ff; }
-        header .meta { font-size: 0.75rem; color: #888; margin-top: 0.3rem; }
-        .container { max-width: 640px; margin: 0 auto; padding: 1rem; }
-        .section-title {
-            font-size: 0.78rem;
-            color: #90c0ff;
-            letter-spacing: 0.08em;
-            margin: 1.5rem 0 0.8rem;
-            padding-bottom: 0.4rem;
-            border-bottom: 1px solid #2a2a5a;
-        }
-        .news-card {
-            background: #13131f;
-            border: 1px solid #252545;
-            border-radius: 10px;
-            padding: 1rem;
-            margin-bottom: 0.8rem;
-        }
-        .news-card .title {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: #e2e2f0;
-            line-height: 1.5;
-            margin-bottom: 0.5rem;
-        }
-        .news-card .summary {
-            font-size: 0.82rem;
-            color: #9090aa;
-            line-height: 1.7;
-        }
-        .news-card .foot {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 0.7rem;
-            flex-wrap: wrap;
-        }
-        .tag {
-            background: #1a2a4a;
-            color: #90c0ff;
-            font-size: 0.68rem;
-            padding: 0.15rem 0.5rem;
-            border-radius: 20px;
-        }
-        .source { font-size: 0.72rem; color: #555; }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #444;
-            font-size: 0.72rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖 生成AI最新情報</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0a0a14; color: #e2e2f0; font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    header { position: sticky; top: 0; z-index: 100; background: linear-gradient(135deg, #13131f, #1a1a3e); padding: 12px 16px 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.5); }
+    .header-title { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.03em; }
+    .header-sub { font-size: 0.78rem; color: #7878a0; margin-top: 2px; }
+    .tabs-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .tabs-wrapper::-webkit-scrollbar { display: none; }
+    .tabs { display: flex; gap: 6px; padding: 8px 16px 4px; white-space: nowrap; }
+    .cat-tab { display: inline-block; padding: 5px 11px; border-radius: 20px; font-size: 0.78rem; cursor: pointer; border: none; background: #1a1a2e; color: #888; user-select: none; }
+    .cat-tab.active { background: #2a4a8a; color: #fff; }
+    .tag-tab { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.73rem; cursor: pointer; border: none; background: #1a1a2e; color: #888; user-select: none; }
+    .tag-tab.active { background: #8a4a2a; color: #fff; }
+    .container { max-width: 640px; width: 100%; margin: 0 auto; padding: 12px 16px 24px; flex: 1; }
+    .loading { text-align: center; padding: 48px 16px; color: #7878a0; }
+    .spinner { width: 36px; height: 36px; border: 3px solid #1e1e3a; border-top-color: #4a7adf; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 12px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .empty-state { text-align: center; padding: 48px 16px; color: #7878a0; font-size: 0.95rem; line-height: 1.6; }
+    .article-card { padding: 14px 0; border-bottom: 1px solid #1e1e3a; }
+    .article-card:last-child { border-bottom: none; }
+    .article-title a { color: #90c0ff; text-decoration: none; font-size: 0.97rem; font-weight: 600; line-height: 1.45; display: block; }
+    .article-title a:hover { color: #b8d8ff; text-decoration: underline; }
+    .article-summary { color: #aaa; font-size: 0.85rem; line-height: 1.55; margin-top: 6px; }
+    .article-footer { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .badge-category { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; background: #1e3a6a; color: #90c0ff; border: 1px solid #2a5090; }
+    .badge-tag { display: inline-block; padding: 2px 7px; border-radius: 10px; font-size: 0.68rem; background: #1e1e3a; color: #8888bb; border: 1px solid #2a2a50; }
+    .article-source { margin-left: auto; font-size: 0.72rem; color: #666; }
+    footer { text-align: center; padding: 16px; font-size: 0.72rem; color: #444466; border-top: 1px solid #1e1e3a; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>🤖 生成AI最新情報</h1>
-        <div class="meta">2026/03/28 更新 — Powered by Claude</div>
-    </header>
-    <div class="container">
-        <div class="section-title">TODAY'S AI NEWS</div>
+<header>
+  <div class="header-title">🤖 生成AI最新情報</div>
+  <div class="header-sub" id="header-sub">読み込み中...</div>
+  <div class="tabs-wrapper"><div class="tabs" id="cat-tabs"></div></div>
+  <div class="tabs-wrapper"><div class="tabs" id="tag-tabs"></div></div>
+</header>
+<div class="container" id="main-container">
+  <div class="loading" id="loading-state"><div class="spinner"></div>読み込み中...</div>
+</div>
+<footer>生成AI最新情報 &mdash; 自動更新システム（毎朝6時JST）</footer>
+<script>
+  const CATEGORIES = ['すべて', 'モデル・研究', 'ビジネス', 'ツール・製品', '規制・社会'];
+  let allArticles = [], activeCat = 'すべて', activeTag = 'すべて';
 
-        <div class="news-card">
-          <div class="title">GoogleがGeminiにChatGPT・Claude履歴インポート機能を追加（3/26）</div>
-          <div class="summary">Googleは3月26日、GeminiアプリにChatGPTやClaudeからチャット履歴と「メモリー」をインポートできる機能の提供を開始した。ZIPファイル（最大5GB）をアップロードするだけで、他のAIサービスでの会話履歴や設定を引き継いで利用できる。EEA・英国・スイスを除く全ユーザーが対象で、AI間のデータポータビリティ競争が本格化している。</div>
-          <div class="foot">
-            <span class="tag">プラットフォーム</span>
-            <span class="tag">LLM</span>
-            <span class="source">ITmedia AI+</span>
-          </div>
+  function formatDate(s) {
+    if (!s) return '';
+    const d = new Date(s + 'T00:00:00');
+    return `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
+  }
+  function esc(s) {
+    return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  }
+  function getUniqueTags(articles) {
+    const s = new Set();
+    articles.forEach(a => (a.tags||[]).forEach(t => s.add(t)));
+    return ['すべて', ...Array.from(s).sort()];
+  }
+  function filterArticles() {
+    return allArticles.filter(a => {
+      const c = activeCat === 'すべて' || a.category === activeCat;
+      const t = activeTag === 'すべて' || (a.tags||[]).includes(activeTag);
+      return c && t;
+    });
+  }
+  function renderCatTabs() {
+    document.getElementById('cat-tabs').innerHTML = CATEGORIES.map(cat => {
+      const n = cat === 'すべて' ? allArticles.length : allArticles.filter(a=>a.category===cat).length;
+      return `<button class="cat-tab${cat===activeCat?' active':''}" onclick="setCat('${esc(cat)}')">${esc(cat)} (${n})</button>`;
+    }).join('');
+  }
+  function renderTagTabs() {
+    const base = activeCat === 'すべて' ? allArticles : allArticles.filter(a=>a.category===activeCat);
+    const tags = getUniqueTags(base);
+    if (!tags.includes(activeTag)) activeTag = 'すべて';
+    document.getElementById('tag-tabs').innerHTML = tags.map(tag => {
+      const n = tag === 'すべて' ? base.length : base.filter(a=>(a.tags||[]).includes(tag)).length;
+      return `<button class="tag-tab${tag===activeTag?' active':''}" onclick="setTag('${esc(tag)}')">${esc(tag)} (${n})</button>`;
+    }).join('');
+  }
+  function renderArticles() {
+    const c = document.getElementById('main-container');
+    const list = filterArticles();
+    if (!list.length) { c.innerHTML = '<div class="empty-state">該当する記事がありません</div>'; return; }
+    c.innerHTML = list.map(a => `
+      <div class="article-card">
+        <div class="article-title"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></div>
+        ${a.summary?`<div class="article-summary">${esc(a.summary)}</div>`:''}
+        <div class="article-footer">
+          ${a.category?`<span class="badge-category">${esc(a.category)}</span>`:''}
+          ${(a.tags||[]).map(t=>`<span class="badge-tag">${esc(t)}</span>`).join('')}
+          ${a.source?`<span class="article-source">${esc(a.source)}</span>`:''}
         </div>
+      </div>`).join('');
+  }
+  function setCat(cat) { activeCat = cat; renderCatTabs(); renderTagTabs(); renderArticles(); }
+  function setTag(tag) { activeTag = tag; renderTagTabs(); renderArticles(); }
 
-        <div class="news-card">
-          <div class="title">Anthropicが未発表の次世代Claudeを誤公開、推論能力の「段階的飛躍」を確認</div>
-          <div class="summary">Anthropicはセキュリティ上のミスにより、未発表の最新AIモデルを誤って外部に公開してしまった。同社はこの漏洩モデルが推論能力において「段階的な飛躍（step change）」をもたらすと確認しており、正式リリースは数週間以内と見られている。Claudeのメモリー機能も無料ユーザーへの開放が進むなど、Anthropicは機能展開を急加速させている。</div>
-          <div class="foot">
-            <span class="tag">LLM</span>
-            <span class="tag">Anthropic</span>
-            <span class="source">labla.org</span>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="title">iOS 27でSiriのAI連携をユーザーが選択可能に、ChatGPT独占が終幕へ</div>
-          <div class="summary">Appleが今秋リリース予定のiOS 27において、Siriと連携できる外部AIをChatGPT以外にも拡大することが明らかになった。ユーザーはGeminiやClaudeなどを選べるようになる見込みで、ChatGPTの独占体制が崩れる。モバイルAI連携は各社にとって重要な新しい戦場になると予測されている。</div>
-          <div class="foot">
-            <span class="tag">企業</span>
-            <span class="tag">スマートフォン</span>
-            <span class="source">mobilelaby.com</span>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="title">Gemini 3.1 ProがVertex AIでプレビュー公開、推論性能が前世代比2倍超</div>
-          <div class="summary">GoogleのGemini 3.1 ProがVertex AIのModel Gardenでプレビュー公開された。ARC-AGI-2ベンチマークで77.1%を達成し推論性能が前世代比2倍以上に向上。100万トークンのコンテキストウィンドウに対応し、テキスト・音声・画像・動画・PDFなど多様な入力処理が可能な高度なマルチモーダル推論モデルとなっている。</div>
-          <div class="foot">
-            <span class="tag">LLM</span>
-            <span class="tag">Google</span>
-            <span class="source">Google Cloud</span>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="title">米エネルギー省がOpenAI・Google等24社と「ジェネシス・ミッション」を発表</div>
-          <div class="summary">米国エネルギー省はOpenAI、Google、Anthropic、NVIDIAを含む24の主要テクノロジー企業と提携し、AIを活用した科学研究加速を目指す「ジェネシス・ミッション」を発表した。原子力エネルギー・量子コンピューティング・製造業など戦略的分野でのブレークスルーを目指す官民連携プロジェクトで、AI企業と政府の連携が新段階に入った。</div>
-          <div class="foot">
-            <span class="tag">政府</span>
-            <span class="tag">研究</span>
-            <span class="source">X / らいけん</span>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="title">NVIDIA GTC 2026で次世代AI基盤「Vera Rubin」発表、フィジカルAIへ本格展開</div>
-          <div class="summary">NVIDIAはGTC 2026において次世代AI基盤「Vera Rubin」を発表し、AIエージェント・ゲーム・宇宙領域への展開計画を明らかにした。CEOのジェンスン・フアン氏はCES 2026で「フィジカルAIのChatGPTモーメント」と宣言。ボストン・ダイナミクスは2028年までに年間3万体のヒト型ロボット「Atlas」の量産体制を整える計画を進めている。</div>
-          <div class="foot">
-            <span class="tag">ハードウェア</span>
-            <span class="tag">ロボット</span>
-            <span class="source">ソリマチ株式会社コラム</span>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="title">EU AI法、2026年8月に全面適用開始 — 日系企業の規制対応が急務</div>
-          <div class="summary">EUのAI Actは2026年8月2日に大部分の条項が適用開始となり、高リスクAIへの厳格な規制が始まる。違反した場合は最大で年間売上高の7%または3,500万ユーロの制裁金が科される可能性がある。在欧日系企業のAI規制注目度は前年比約20ポイント増に急上昇し、域外適用への備えが急務となっている。</div>
-          <div class="foot">
-            <span class="tag">規制</span>
-            <span class="tag">EU</span>
-            <span class="source">ジェトロ / KPMG Japan</span>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="title">デジタル庁が「ガバメントAI」向け国産LLMを選定、5月から省庁展開へ</div>
-          <div class="summary">デジタル庁は行政向けAI基盤「ガバメントAI」での活用を想定した国産LLMの選定を2026年2〜3月に完了し、5月から他府省庁への展開を進める予定だ。国立情報学研究所（NII）の大規模言語モデル研究開発センターも「LLM-jp-3」を公開し、オープンかつ日本語に強いモデルの研究を加速させている。政府・学術機関一体となった国産AI基盤整備が本格化している。</div>
-          <div class="foot">
-            <span class="tag">規制</span>
-            <span class="tag">国産LLM</span>
-            <span class="source">日経クロステック / NII LLMC</span>
-          </div>
-        </div>
-
-    </div>
-    <footer>生成AI最新情報 — 毎朝6時自動更新</footer>
+  async function loadData() {
+    try {
+      const res = await fetch('./data/today.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      allArticles = Array.isArray(data.articles) ? data.articles : [];
+      document.getElementById('header-sub').textContent = `${formatDate(data.date)}　${allArticles.length}件`;
+      renderCatTabs(); renderTagTabs();
+      document.getElementById('loading-state')?.remove();
+      renderArticles();
+    } catch(e) {
+      document.getElementById('header-sub').textContent = '配信情報なし';
+      document.getElementById('cat-tabs').innerHTML = '';
+      document.getElementById('tag-tabs').innerHTML = '';
+      document.getElementById('main-container').innerHTML = '<div class="empty-state">本日のニュースはまだ配信されていません 🛰️</div>';
+    }
+  }
+  loadData();
+</script>
 </body>
 </html>
