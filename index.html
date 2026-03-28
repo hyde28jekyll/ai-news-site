@@ -22,7 +22,7 @@
             z-index: 100;
         }
         header h1 { font-size: 1.3rem; color: #90c0ff; }
-        header .meta { font-size: 0.75rem; color: #666; margin-top: 0.3rem; }
+        header .meta { font-size: 0.75rem; color: #888; margin-top: 0.3rem; }
         .container { max-width: 640px; margin: 0 auto; padding: 1rem; }
         .section-title {
             font-size: 0.78rem;
@@ -66,12 +66,6 @@
             border-radius: 20px;
         }
         .source { font-size: 0.72rem; color: #555; }
-        .placeholder {
-            text-align: center;
-            padding: 4rem 1rem;
-        }
-        .placeholder .icon { font-size: 2.5rem; margin-bottom: 1rem; }
-        .placeholder p { color: #555; font-size: 0.88rem; line-height: 1.8; }
         footer {
             text-align: center;
             padding: 2rem;
@@ -83,15 +77,92 @@
 <body>
     <header>
         <h1>🤖 生成AI最新情報</h1>
-        <div class="meta">毎朝6時自動更新 — Powered by Claude</div>
+        <div class="meta">2026/03/28 更新 — Powered by Claude</div>
     </header>
     <div class="container">
-        <div class="placeholder">
-            <div class="icon">🛰️</div>
-            <p>初回の配信は明朝6時（JST）の予定です<br>
-            Claudeエージェントが最新のAI情報を自動収集・配信します</p>
+        <div class="section-title">TODAY'S AI NEWS</div>
+
+        <div class="news-card">
+          <div class="title">GoogleのGeminiアプリ、ChatGPT・Claudeからの履歴インポート機能を開始</div>
+          <div class="summary">Googleは2026年3月27日、GeminiアプリにChatGPTやClaudeのチャット履歴とメモリをインポートする機能を公開した。最大5GBのZIPファイルをアップロードする形式で、他のAIとのやり取りをそのままGeminiで引き継いで継続できる。EEA・英国・スイスを除く全ユーザーが対象で、AI間の乗り換えハードルを大幅に下げる機能として注目を集めている。</div>
+          <div class="foot">
+            <span class="tag">プラットフォーム</span>
+            <span class="tag">LLM</span>
+            <span class="source">ITmedia AI+</span>
+          </div>
         </div>
+
+        <div class="news-card">
+          <div class="title">Anthropicが次世代Claudeを誤公開、「段階的な飛躍」と確認</div>
+          <div class="summary">Anthropicはセキュリティ上のミスにより、未発表の最新AIモデルを誤って公開してしまった。同社はモデルの存在を確認し、推論能力において「段階的な飛躍（step change）」をもたらすと認めており、正式リリースは数週間以内と見られている。また同社は米国防総省から「サプライチェーンリスク」に分類されたことを不服として提訴する事態にも発展している。</div>
+          <div class="foot">
+            <span class="tag">LLM</span>
+            <span class="tag">Anthropic</span>
+            <span class="source">labla.org</span>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="title">iOS 27でSiriがGemini・Claudeにも対応へ、ChatGPT独占が終幕</div>
+          <div class="summary">Appleが今秋リリース予定のiOS 27において、Siriと連携する外部AIをユーザーが自由に選択できるようになる見込みだ。これまでChatGPTが独占していたSiriとの連携が、GeminiやClaudeにも開放される形になる。AI選択の自由化はユーザー体験を大きく変え、各AI企業にとって重要な新戦場になると予測されている。</div>
+          <div class="foot">
+            <span class="tag">企業</span>
+            <span class="tag">スマートフォン</span>
+            <span class="source">mobilelaby.com</span>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="title">Gemini 3.1 ProがGPQA Diamondで94.3%達成、GPT-5.4を上回る</div>
+          <div class="summary">GoogleのGemini 3.1 ProはVertex AIでプレビュー公開され、専門家レベルの科学知識を測るGPQA Diamondベンチマークで94.3%を記録した。GPT-5.4（92.8%）やClaude Opus 4.6（91.3%）を上回り、3大AIの最新モデル比較でトップに立った。100万トークンのコンテキストウィンドウにも対応し、テキスト・音声・画像・動画など多様な情報処理が可能。</div>
+          <div class="foot">
+            <span class="tag">LLM</span>
+            <span class="tag">Google</span>
+            <span class="source">blog.greeden.me</span>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="title">米エネルギー省がOpenAI・Google等24社と「ジェネシス・ミッション」発表</div>
+          <div class="summary">米国エネルギー省はOpenAI、Google、Anthropic、NVIDIAを含む24の主要テクノロジー企業と提携し、AIを活用して科学研究を加速させる「ジェネシス・ミッション（Genesis Mission）」を発表した。原子力エネルギー、量子コンピューティング、製造業など戦略的分野でのブレークスルーを目指す官民連携プロジェクトとなる。</div>
+          <div class="foot">
+            <span class="tag">政府</span>
+            <span class="tag">研究</span>
+            <span class="source">X / らいけん</span>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="title">NVIDIA GTC 2026で次世代AI基盤「Vera Rubin」を発表、フィジカルAIへ展開</div>
+          <div class="summary">NVIDIAはGTC 2026において次世代AI基盤アーキテクチャ「Vera Rubin」を発表し、AIエージェント・ゲーム・宇宙領域への展開計画を明らかにした。CEOのジェンスン・フアン氏はCES 2026で「フィジカルAIのChatGPTモーメント」と表現し、ロボット産業への本格進出を宣言。ボストン・ダイナミクスは2028年までに年間3万体のヒト型ロボット量産体制を整える計画を進めている。</div>
+          <div class="foot">
+            <span class="tag">ハードウェア</span>
+            <span class="tag">ロボット</span>
+            <span class="source">ソリマチ株式会社コラム</span>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="title">EU AI法、2026年8月に全面適用へ — 日系企業の対応が急務</div>
+          <div class="summary">EUのAI規制法（AI Act）は2026年8月に大部分の条項が適用され、高リスクAIシステムへの厳格な規制が始まる。在欧日系企業のAI規制注目度は前年比19.6ポイント増の46.5%に急上昇し、AI活用率も27.9%から52.5%へ倍増した。違反した場合は最大で全世界年間売上高の7%または3,500万ユーロの制裁金が科されるため、域外適用への対応が急務となっている。</div>
+          <div class="foot">
+            <span class="tag">規制</span>
+            <span class="tag">EU</span>
+            <span class="source">ジェトロ / KPMG Japan</span>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="title">AIエージェントが2026年の主要トレンドに — 企業導入は「評価」フェーズへ</div>
+          <div class="summary">Forresterは2026年をAIエージェントが本格普及する年と位置付け、エンタープライズアプリベンダーの30%が独自のMCPサーバーを立ち上げると予測している。「試す年」から「評価される年」へと移行した企業AIは、投資対効果と具体的な数字が問われるフェーズに突入した。Gartnerは2026年までに世界企業の80%以上がGenAIを本格展開すると見込んでいる。</div>
+          <div class="foot">
+            <span class="tag">AIエージェント</span>
+            <span class="tag">企業</span>
+            <span class="source">HP Tech&amp;Device TV</span>
+          </div>
+        </div>
+
     </div>
-    <footer>生成AI最新情報 — 自動更新システム</footer>
+    <footer>生成AI最新情報 — 毎朝6時自動更新</footer>
 </body>
 </html>
