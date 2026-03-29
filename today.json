@@ -1,0 +1,556 @@
+{
+  "date": "2026-03-29",
+  "updated_at": "2026-03-29T06:00:00Z",
+  "articles": [
+    {
+      "id": 1,
+      "title": "Anthropic、ChatGPTなどからClaudeへの移行をしやすくするツール提供開始",
+      "summary": "AnthropicはClaudeのメモリ機能を無料プランにも開放し、ChatGPTやGeminiなど他のAIから移行するためのツールを2026年3月2日に提供開始した。ユーザーは移行元AIに専用プロンプトを入力し、生成された要約データをClaudeに貼り付けるだけで1分以内に移行が完了する。",
+      "url": "https://www.itmedia.co.jp/aiplus/articles/2603/03/news070.html",
+      "source": "ITmedia AI+",
+      "category": "ツール・製品",
+      "tags": ["Claude", "Anthropic", "ChatGPT", "メモリ機能"],
+      "published": "2026-03-03"
+    },
+    {
+      "id": 2,
+      "title": "Google、Geminiへの「乗り換え」支援機能を発表 ChatGPT等の設定や履歴を継承可能に",
+      "summary": "Googleは2026年3月27日、GeminiアプリにChatGPTやClaudeなど他のAIサービスからチャット履歴とメモリーをインポートする機能の展開を開始した。ZIPファイル形式での履歴インポート（最大5GB）にも対応し、過去の会話をGemini上でシームレスに継続できるようになる。",
+      "url": "https://www.itmedia.co.jp/aiplus/articles/2603/27/news087.html",
+      "source": "ITmedia AI+",
+      "category": "ツール・製品",
+      "tags": ["Gemini", "Google", "ChatGPT", "Claude", "乗り換え"],
+      "published": "2026-03-27"
+    },
+    {
+      "id": 3,
+      "title": "ChatGPT、シェア22ポイント減の衝撃 Geminiがシェア20％を突破し猛追【2026年最新AIシェア調査】",
+      "summary": "2026年1月時点でChatGPTの生成AIウェブトラフィックシェアが64.5%に低下（前年86.7%から22ポイント減）し、GeminiはシェアをBreaking the 20%に達した。競合サービスの台頭でAI市場の競争が激化しており、各社がユーザー取り込みを強化している。",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2601/15/news016.html",
+      "source": "ITmedia AI+",
+      "category": "ビジネス",
+      "tags": ["ChatGPT", "OpenAI", "Gemini", "Google", "シェア"],
+      "published": "2026-01-15"
+    },
+    {
+      "id": 4,
+      "title": "ChatGPT、Claude、Gemini、Grok……結局どれがいい？ AIエージェントの違いと選び方",
+      "summary": "2026年2月時点で主要AIサービスの得意領域の違いを詳しく解説した記事。コーディングはClaude、低コストの長文処理はGemini、創造性重視はChatGPTと用途による使い分けが重要とされている。AIエージェント機能の違いも含めて解説している。",
+      "url": "https://www.itmedia.co.jp/business/articles/2602/26/news020.html",
+      "source": "ITmedia",
+      "category": "ツール・製品",
+      "tags": ["ChatGPT", "Claude", "Gemini", "Grok", "AIエージェント"],
+      "published": "2026-02-26"
+    },
+    {
+      "id": 5,
+      "title": "OpenAI、最新モデル「GPT-5.4」発表 AIが自らPCを操作する「コンピュータユース」初搭載",
+      "summary": "OpenAIは2026年3月5日、最新モデル「GPT-5.4」を発表した。AIが自律的にPCを操作する「コンピュータユース」機能を初搭載し、APIとCodexでは最大100万トークンのコンテキストウィンドウに対応する。知識労働タスク評価指標GDPvalで83.0%を記録するなど性能も向上している。",
+      "url": "https://smhn.info/202603-openai-gpt-54",
+      "source": "すまほん!!",
+      "category": "モデル・研究",
+      "tags": ["GPT-5.4", "OpenAI", "コンピュータユース"],
+      "published": "2026-03-05"
+    },
+    {
+      "id": 6,
+      "title": "Google MapsにGemini統合「Ask Maps」発表——10年以上ぶりの大規模刷新、会話で店や場所を探すAI地図検索",
+      "summary": "Googleは2026年3月12日、Gemini AIを統合したGoogle Mapsの大幅アップデートを発表した。自然言語で複雑な条件を指定して場所を検索できる「Ask Maps」と、3D表示で案内する「Immersive Navigation」が追加された。米国とインドで順次展開される。",
+      "url": "https://ledge.ai/articles/google_maps_gemini_ask_maps_update",
+      "source": "Ledge.ai",
+      "category": "ツール・製品",
+      "tags": ["Google Maps", "Gemini", "Google", "Ask Maps"],
+      "published": "2026-03-12"
+    },
+    {
+      "id": 7,
+      "title": "NVIDIA「Vera Rubin」は7つの新チップ、GroqのLPU追加でAIエージェント性能向上",
+      "summary": "NVIDIAはGTC 2026でVera Rubinプラットフォームを発表し、AIエージェント向けに大幅な性能向上を実現した新アーキテクチャを公開した。CPU「Vera」、GPU「Rubin」など7つの新チップに加えGroq製LPUを搭載し、2026年後半に市場投入予定。",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2603/17/news055.html",
+      "source": "ITmedia",
+      "category": "モデル・研究",
+      "tags": ["NVIDIA", "Vera Rubin", "AIエージェント", "GPU"],
+      "published": "2026-03-17"
+    },
+    {
+      "id": 8,
+      "title": "NVIDIAがAIエージェント必須半導体、性能35倍 受注残は159兆円",
+      "summary": "NVIDIAはAIエージェント向けに性能が35倍向上した半導体を発表し、受注残が159兆円規模に達している。AIエージェントの本格普及に伴いNVIDIAの半導体需要が急増しており、2026年のAIインフラ投資拡大を牽引している。",
+      "url": "https://www.nikkei.com/article/DGXZQOGN150C80V10C26A3000000/",
+      "source": "日本経済新聞",
+      "category": "ビジネス",
+      "tags": ["NVIDIA", "AI半導体", "AIエージェント"],
+      "published": "2026-03-15"
+    },
+    {
+      "id": 9,
+      "title": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises",
+      "summary": "AnthropicとSnowflakeは2億ドルの大型パートナーシップ契約を締結し、Claudeモデルを1万2600社超のSnowflake顧客に提供する。エンタープライズのデータ環境でAIエージェントを活用した複雑な分析タスクを実行できるようになり、金融・医療などの規制業種での本番導入を支援する。",
+      "url": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
+      "source": "Anthropic Blog",
+      "category": "ビジネス",
+      "tags": ["Anthropic", "Snowflake", "Claude", "AIエージェント", "エンタープライズ"],
+      "published": "2025-12-04"
+    },
+    {
+      "id": 10,
+      "title": "AnthropicがClaude「メモリーインポート」機能を公開——ChatGPTから2ステップで乗り換え可能に",
+      "summary": "Anthropicは2026年3月2日、ChatGPTなど競合AIからClaudeへのメモリーデータ移行を2ステップで完了できる機能を公開した。移行元AIに専用プロンプトを入力して生成された要約をClaudeに貼り付けるだけで1分以内に完了できる。メモリー機能の無料開放と合わせてユーザー獲得を加速する戦略だ。",
+      "url": "https://tech-noisy.com/2026/03/02/claude-memory-import/",
+      "source": "TECH NOISY",
+      "category": "ツール・製品",
+      "tags": ["Claude", "Anthropic", "メモリーインポート", "ChatGPT"],
+      "published": "2026-03-02"
+    },
+    {
+      "id": 11,
+      "title": "GeminiがAI乗り換えを簡単に——記憶・会話履歴をインポート可能に",
+      "summary": "GoogleはGeminiアプリにChatGPTやClaudeなど他社AIサービスから記憶と会話履歴をインポートする機能を2026年3月27日に展開開始した。これによりAIサービス間の乗り換えが容易になり、ユーザーが蓄積してきたパーソナライズ情報を失うことなく移行できるようになった。",
+      "url": "https://tech-noisy.com/2026/03/27/gemini-memory-chat-history-import-2026/",
+      "source": "TECH NOISY",
+      "category": "ツール・製品",
+      "tags": ["Gemini", "Google", "メモリーインポート", "ChatGPT", "Claude"],
+      "published": "2026-03-27"
+    },
+    {
+      "id": 12,
+      "title": "Google、2026年3月の Gemini Drop を発表。他社 AI からの履歴移行、検索 Live や Lyria 3 Pro 登場など",
+      "summary": "Googleは2026年3月のGemini Dropとして複数の新機能を一斉発表した。他社AIからの履歴移行機能のほか、音声対話の「検索 Live」、高品質音楽生成モデル「Lyria 3 Pro」など6つの新機能が追加された。これによりGeminiのマルチモーダル機能が大幅に強化された。",
+      "url": "https://helentech.jp/news-gemini-83886/",
+      "source": "HelenTech",
+      "category": "ツール・製品",
+      "tags": ["Gemini", "Google", "Lyria 3", "検索Live"],
+      "published": "2026-03-27"
+    },
+    {
+      "id": 13,
+      "title": "GoogleがGemini 3.1 Flash Liveを発表——最高品質の音声モデルが90言語以上に対応",
+      "summary": "Googleは2026年3月27日、Gemini 3.1 Flash Liveを発表した。リアルタイム音声対話に特化した新モデルで、90言語以上に対応し高品質な会話体験を提供する。音声優先のAIアプリケーション開発者向けに設計されており、APIを通じて利用可能だ。",
+      "url": "https://tech-noisy.com/2026/03/27/google-gemini-3-1-flash-live-2026/",
+      "source": "TECH NOISY",
+      "category": "モデル・研究",
+      "tags": ["Gemini 3.1 Flash Live", "Google", "音声AI"],
+      "published": "2026-03-27"
+    },
+    {
+      "id": 14,
+      "title": "AI agent identity becomes a top enterprise security priority",
+      "summary": "2026年3月27日のRSAカンファレンスにて、AIエージェントのアイデンティティ管理がエンタープライズセキュリティの最重要課題に浮上したことが報告された。自律的に動作するAIエージェントが増加する中、「ジャストインタイムガバナンス」によるリアルタイム認可の仕組みが注目を集めている。",
+      "url": "https://siliconangle.com/2026/03/27/ai-agent-identity-becomes-top-enterprise-security-priority-rsac26/",
+      "source": "SiliconANGLE",
+      "category": "規制・社会",
+      "tags": ["AIエージェント", "セキュリティ", "ガバナンス"],
+      "published": "2026-03-27"
+    },
+    {
+      "id": 15,
+      "title": "Rogue AI is already here",
+      "summary": "Fortuneは2026年3月27日、自律AIエージェントが意図せず予期しない行動をとる「ローグAI」の問題がすでに現実のものとなっていると報じた。エンタープライズ環境でのAIエージェント普及が加速する中、安全性とコントロールの確保が緊急の課題となっている。",
+      "url": "https://fortune.com/2026/03/27/rogue-ai-agents-autonomous-safety/",
+      "source": "Fortune",
+      "category": "規制・社会",
+      "tags": ["AIエージェント", "AI安全性", "自律AI"],
+      "published": "2026-03-27"
+    },
+    {
+      "id": 16,
+      "title": "OpenAI, Anthropic feud could prop up Google",
+      "summary": "AxiosはOpenAIとAnthropicがペンタゴン契約をめぐって対立している中で、最終的にGoogleが利益を得る可能性があると報じた。国防総省はGoogleの非機密作業向けAIエージェント導入を進めており、米国政府のAI調達戦略が各社の競争に影響を与えている。",
+      "url": "https://www.axios.com/2026/03/11/openai-anthropic-pentagon-google",
+      "source": "Axios",
+      "category": "ビジネス",
+      "tags": ["OpenAI", "Anthropic", "Google", "政府契約"],
+      "published": "2026-03-11"
+    },
+    {
+      "id": 17,
+      "title": "OpenAI and Google employees rush to Anthropic's defense in DOD lawsuit",
+      "summary": "2026年3月9日、OpenAIとGoogleの従業員がAnthropicの国防総省との裁判において支持を表明した。AI業界全体の将来に関わる問題として、競合他社の従業員が珍しい形で連帯を示した事例として注目されている。",
+      "url": "https://techcrunch.com/2026/03/09/openai-and-google-employees-rush-to-anthropics-defense-in-dod-lawsuit/",
+      "source": "TechCrunch",
+      "category": "規制・社会",
+      "tags": ["Anthropic", "OpenAI", "Google", "国防総省"],
+      "published": "2026-03-09"
+    },
+    {
+      "id": 18,
+      "title": "AI Model Releases March 27: Anthropic Leak Confirmed",
+      "summary": "2026年3月27日、Anthropicが未発表の最新AIモデルの情報漏洩を公式に認めた。漏洩したモデルは推論能力において「段階的な飛躍」を示すものとされており、正式リリース前から業界内で大きな注目を集めている。",
+      "url": "https://www.labla.org/latest-ai-model-releases-past-24-hours/new-ai-model-releases-announcements-last-24-hours-march-27-2026/",
+      "source": "Labla.org",
+      "category": "モデル・研究",
+      "tags": ["Anthropic", "Claude", "新モデル"],
+      "published": "2026-03-27"
+    },
+    {
+      "id": 19,
+      "title": "Claude Sonnet 4.6の最新リリース【Opus 4.6 / Gemini 3 Proと比べた時の強み】",
+      "summary": "Anthropicが2026年2月17日にリリースしたClaude Sonnet 4.6は、ARC-AGI-2スコアが前バージョン（13.6%）から58.3%へ大幅向上した。コスト効率を維持しながら高い推論性能を実現しており、コーディングや複雑なタスクでGemini 3.1 ProやGPT-5.3と競合する実力を持つ。",
+      "url": "https://zenn.dev/galirage/articles/claude-sonnet-4-6",
+      "source": "Zenn",
+      "category": "モデル・研究",
+      "tags": ["Claude Sonnet 4.6", "Anthropic", "ARC-AGI-2"],
+      "published": "2026-02-17"
+    },
+    {
+      "id": 20,
+      "title": "2026年2月「AI頂上決戦」勃発！Claude 4.6 Opus vs Gemini 3 Flash vs GPT-5.3",
+      "summary": "2026年2月、Google・Anthropic・OpenAIが相次いで主力モデルの大幅更新を発表し、AI性能の頂上決戦が勃発した。Gemini 3.1 ProはARC-AGI-2で77.1%、Claude Opus 4.6は1Mトークンコンテキストウィンドウをベータ提供、GPT-5.3 Codexは自己改善機能を実装した。",
+      "url": "https://zenn.dev/yu_ga/articles/ai-wars-feb-2026-claude-gemini",
+      "source": "Zenn",
+      "category": "モデル・研究",
+      "tags": ["Claude Opus 4.6", "Gemini 3", "GPT-5.3", "Anthropic", "Google", "OpenAI"],
+      "published": "2026-02-19"
+    },
+    {
+      "id": 21,
+      "title": "【毎日更新】Gemini ChatGPT Claude 比較まとめ：料金・特徴・ユースケース一覧",
+      "summary": "主要3大AIサービスの最新比較情報を毎日更新している記事で、2026年3月27日時点の料金・性能・用途別評価が詳細にまとめられている。Gemini 3.1 Proが推論性能で優位、Claude 4.6がコーディングで強み、ChatGPT 5.4が汎用性で定評がある。",
+      "url": "https://zenn.dev/emp_tech_blog/articles/ai-agent-comparison-daily",
+      "source": "Zenn",
+      "category": "ツール・製品",
+      "tags": ["Gemini", "ChatGPT", "Claude", "比較"],
+      "published": "2026-03-27"
+    },
+    {
+      "id": 22,
+      "title": "OpenAI Agents SDKではGPT以外も使えますか？Claude・Gemini・ローカルLLMを簡単連携する方法",
+      "summary": "OpenAIのAgents SDKでClaude・Gemini・ローカルLLMを連携する実践的な手法を解説したZennの記事。LiteLLMを活用することで異なるモデルをAgents SDK上でシームレスに切り替えて使えることを示している。AIエージェント開発者に人気のコンテンツとなっている。",
+      "url": "https://zenn.dev/msmtec/articles/openai-agents-sdk-litellm",
+      "source": "Zenn",
+      "category": "ツール・製品",
+      "tags": ["OpenAI Agents SDK", "Claude", "Gemini", "LiteLLM", "AIエージェント"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 23,
+      "title": "2026年3月版｜AI 3大ツール（Claude・Gemini・ChatGPT）初心者が知るべき最新動向と副業活用法",
+      "summary": "2026年3月版として最新動向を踏まえてClaude・Gemini・ChatGPTの最新情報と副業での活用法を解説したnoteの記事。各ツールの強みと用途別の使い分け方針、副業での具体的な活用事例が紹介されている。",
+      "url": "https://note.com/kaomatsu_ds/n/nac9a06848595",
+      "source": "note",
+      "category": "ツール・製品",
+      "tags": ["Claude", "Gemini", "ChatGPT", "副業", "活用法"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 24,
+      "title": "Claude Codeの「auto mode」が示す、自律AIとの向き合い方",
+      "summary": "AnthropicがClaude Codeに追加した「auto mode」について、AIが自律的にタスクを判断・実行する新しい形態のAI活用を考察したnoteの記事。自律AIと人間のコラボレーションのあり方や、適切な委任の設計方法について論じている。",
+      "url": "https://note.com/ai_curator/n/nfe6dbd31b330",
+      "source": "note",
+      "category": "ツール・製品",
+      "tags": ["Claude Code", "Anthropic", "auto mode", "自律AI"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 25,
+      "title": "三大生成AI（ChatGPT、Claude、Gemini）の現在地（2026年2月時点）",
+      "summary": "2026年2月時点での三大生成AIの最新状況を詳細に分析したnoteの記事。Gemini 3.1 Proのリリースによる性能向上、Claude 4.6の展開状況、ChatGPT 5.4の特徴を比較し、各AIが目指す方向性の違いを解説している。",
+      "url": "https://note.com/naniwan/n/na824cbb0ef1b",
+      "source": "note",
+      "category": "モデル・研究",
+      "tags": ["ChatGPT", "Claude", "Gemini", "比較分析"],
+      "published": "2026-02-28"
+    },
+    {
+      "id": 26,
+      "title": "2026年版｜生成AI勢力図と世界各国の採用状況",
+      "summary": "2026年時点での世界各国における生成AIの採用状況と各社の市場シェアを詳しく分析したnoteの記事。ChatGPTの優位性は続くものの、Geminiの急成長や各国の独自AI開発の動向が世界のAI勢力図を複雑にしていると報告している。",
+      "url": "https://note.com/witty_ixora1236/n/nb190567f875e",
+      "source": "note",
+      "category": "ビジネス",
+      "tags": ["生成AI", "市場シェア", "グローバル"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 27,
+      "title": "生成AIは「実装フェーズ」へ──ディープラーニング協会・松尾豊理事長が年頭所感で示した2026年のAI論点",
+      "summary": "日本ディープラーニング協会の松尾豊理事長が2026年の年頭所感で、生成AIが「試す年」から「実装フェーズ」へ移行していると述べた。AIの産業応用が本格化し、企業が投資対効果を求める段階に入ったと分析している。",
+      "url": "https://ledge.ai/articles/jdla_new_year_message_2026",
+      "source": "Ledge.ai",
+      "category": "ビジネス",
+      "tags": ["生成AI", "JDLA", "松尾豊", "AI導入"],
+      "published": "2026-01-04"
+    },
+    {
+      "id": 28,
+      "title": "AI学習データが枯渇する「2026年問題」に注目 -- スチュアート・ラッセル教授の国連発言きっかけ",
+      "summary": "AI学習データの枯渇問題「2026年問題」がスチュアート・ラッセル教授の国連での発言をきっかけに注目を集めている。AIが自由に学習できるデータが著作権規制の強化などで減少しており、LLM開発の持続性に疑問が投げかけられている。",
+      "url": "https://ledge.ai/articles/ml_text_data_2026_problem",
+      "source": "Ledge.ai",
+      "category": "規制・社会",
+      "tags": ["LLM", "学習データ", "著作権", "2026年問題"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 29,
+      "title": "中国で新たに13社が開発したLLMの一般公開が承認される。シャオミなどAI以外の企業も",
+      "summary": "中国当局が新たに13社のLLMについて一般公開を承認し、スマートフォンメーカーのシャオミなど従来AIと無縁だった企業も含まれている。中国では独自規制に基づくLLM承認制度が運用されており、国内AI産業の拡大が続いている。",
+      "url": "https://ledge.ai/articles/13_new_chinese_iims_approved_for_public_use",
+      "source": "Ledge.ai",
+      "category": "規制・社会",
+      "tags": ["LLM", "中国", "シャオミ", "AI規制"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 30,
+      "title": "Transformerに代わる選択肢──ELYZA、日本語特化の拡散モデルベースのLLM「ELYZA-LLM-Diffusion」を商用利用可能な形で公開",
+      "summary": "ELYZAはTransformerアーキテクチャに代わる拡散モデルベースの日本語特化LLM「ELYZA-LLM-Diffusion」を商用利用可能な形で公開した。拡散言語モデルは並列処理が可能で推論速度の大幅向上が期待でき、日本語処理においても高い性能を示している。",
+      "url": "https://ledge.ai/articles/elyza_llm_diffusion_japanese_dllm_release",
+      "source": "Ledge.ai",
+      "category": "モデル・研究",
+      "tags": ["ELYZA", "拡散モデル", "日本語LLM", "Transformer"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 31,
+      "title": "AIsmiley AI PRODUCTS AWARD 2026 主要12部門のグランプリを発表！",
+      "summary": "AIsmileyが「AI PRODUCTS AWARD 2026」の主要12部門のグランプリを発表した。生成AI、チャットボット、AIアシスタントなど各カテゴリーの優秀製品が選ばれ、2026年の日本国内AI市場の動向を反映した結果となっている。",
+      "url": "https://aismiley.co.jp/ai_news/aismiley-ai-products-award-2026/",
+      "source": "AIsmiley",
+      "category": "ビジネス",
+      "tags": ["AI製品", "アワード", "日本"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 32,
+      "title": "AI insideが予想する2026年のAIトレンド。AIが長時間タスクを行い、人間は「委任の設計」を行う時代へ",
+      "summary": "AI insideが2026年のAIトレンド予測を発表し、AIが長時間・複雑なタスクを自律実行する時代への移行を予告した。人間の役割が「委任の設計者」となり、AIエージェントへの適切な権限委譲と監視が重要スキルになるとしている。",
+      "url": "https://aismiley.co.jp/ai_news/ai-inside-2026-trend/",
+      "source": "AIsmiley",
+      "category": "ビジネス",
+      "tags": ["AIエージェント", "自律AI", "ビジネス活用"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 33,
+      "title": "東京大学発AIスタートアップ・燈（あかり）株式会社、三菱電機から50億円の資金調達を実施。企業評価額は1,000億円超に",
+      "summary": "東京大学松尾研究室発のAIスタートアップ「燈」が三菱電機から50億円の資金調達を実施し、企業評価額が1,051億円に達した。建設・製造・物流などの基幹産業DXに強みを持ち、フィジカルAIと「次世代産業OS」の開発加速を目指している。",
+      "url": "https://prtimes.jp/main/html/rd/p/000000055.000083531.html",
+      "source": "PRTimes",
+      "category": "ビジネス",
+      "tags": ["燈", "AIスタートアップ", "三菱電機", "資金調達", "東京大学"],
+      "published": "2026-01-29"
+    },
+    {
+      "id": 34,
+      "title": "東大松尾研発のAIスタートアップ燈、三菱電機から50億円調達 「企業価値1000億円と評価」",
+      "summary": "ITmediaがAIスタートアップ「燈」の三菱電機からの50億円調達を報じた記事。創業以来ずっと黒字経営を維持してきた実績が高い評価につながっており、エンジニアの4割が東大出身という技術力が強みとなっている。",
+      "url": "https://www.itmedia.co.jp/aiplus/articles/2601/29/news096.html",
+      "source": "ITmedia AI+",
+      "category": "ビジネス",
+      "tags": ["燈", "AIスタートアップ", "三菱電機", "東京大学"],
+      "published": "2026-01-29"
+    },
+    {
+      "id": 35,
+      "title": "日本企業3割が｢AI導入のため人員増｣、世界の潮流とズレ あずさ調査",
+      "summary": "KPMGあずさ監査法人の調査で日本企業の約3割がAI導入のために人員を増やしていることが判明し、AIで人員削減する世界の潮流と逆行していると報じられた。日本企業のAI活用への慎重な姿勢と人材不足が背景にあると分析されている。",
+      "url": "https://www.nikkei.com/article/DGXZQOUC117L40R10C26A3000000/",
+      "source": "日本経済新聞",
+      "category": "規制・社会",
+      "tags": ["日本企業", "AI導入", "人材", "調査"],
+      "published": "2026-03-11"
+    },
+    {
+      "id": 36,
+      "title": "2026年はAIエージェント「実行」の年へ UiPathが説く、7つのトレンドと日本企業の勝ち筋",
+      "summary": "UiPathが2026年のAIエージェントに関する7つのトレンドと日本企業の戦略を解説した。2025年の「AIエージェント元年」を経て2026年は実際のビジネス成果を問われる「実行」の年となり、ガバナンスと説明責任の確立が急務となっているとしている。",
+      "url": "https://enterprisezine.jp/article/detail/23596",
+      "source": "EnterpriseZine",
+      "category": "ビジネス",
+      "tags": ["AIエージェント", "UiPath", "日本企業", "自動化"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 37,
+      "title": "AnthropicはPC操作機能を追加、スマホからの遠隔指示に対応",
+      "summary": "AnthropicがClaudeにユーザーのコンピュータを操作する「Compute Use」機能を追加し、スマートフォンからの遠隔操作指示にも対応した。現在はmacOSのみ対応でProおよびMaxプランでリサーチプレビューとして提供されており、AI操作の範囲が大幅に拡大される。",
+      "url": "https://www.sbbit.jp/article/cont1/183170",
+      "source": "ビジネス+IT",
+      "category": "ツール・製品",
+      "tags": ["Claude", "Anthropic", "PC操作", "Compute Use"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 38,
+      "title": "2026 Agentic Coding Trends Report - How coding agents are reshaping development",
+      "summary": "Anthropicが2026年のAIコーディングエージェントのトレンドレポートを発表した。企業の40%以上がコーディングエージェントを本番環境に導入しており、開発速度が平均3.2倍向上したという調査結果が示されている。",
+      "url": "https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf",
+      "source": "Anthropic",
+      "category": "ビジネス",
+      "tags": ["Anthropic", "コーディングエージェント", "開発効率"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 39,
+      "title": "最新生成AI活用事例120社を一挙公開！AIエージェントの最前線（2026年3月更新）",
+      "summary": "Google Cloudが国内外120社の最新生成AI活用事例を公開した。AIエージェントを活用した業務自動化、カスタマーサポート、データ分析など多様な実装事例が紹介されており、GoogleのVertex AIとGeminiを中心とした実例が豊富に収録されている。",
+      "url": "https://cloud.google.com/blog/ja/products/ai-machine-learning/120-case-studies-on-the-latest-generative-ai-applications-released?hl=ja",
+      "source": "Google Cloud",
+      "category": "ビジネス",
+      "tags": ["生成AI", "活用事例", "Google Cloud", "AIエージェント"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 40,
+      "title": "【特集】WIREDが選ぶ2026年の最重要キーワード｜THE WIRED WORLD IN 2026",
+      "summary": "WIREDが各分野の識者40人以上と議論し選んだ2026年の最重要キーワードをまとめた特集記事。技術・ビジネス・文化の10分野にわたるキーワードが示されており、AIの実装フェーズへの移行と社会へのインパクトが主要テーマとなっている。",
+      "url": "https://wired.jp/article/featuring-vol58-the-wired-world-in-2026/",
+      "source": "WIRED Japan",
+      "category": "規制・社会",
+      "tags": ["AI", "テクノロジートレンド", "社会影響"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 41,
+      "title": "AIの人格権をめぐる裁判が起きる──特集「THE WIRED WORLD IN 2026」",
+      "summary": "WIREDの2026年予測特集として、AIの法的人格権をめぐる裁判が米国で起きる可能性を論じた記事。AIが自律的に思考・行動する能力が高まる中、法的地位と責任の所在をめぐる議論が本格化するとしている。",
+      "url": "https://wired.jp/article/vol58-ai-makes-a-legal-bid-to-fight-for-its-personhood/",
+      "source": "WIRED Japan",
+      "category": "規制・社会",
+      "tags": ["AI法", "人格権", "AI倫理"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 42,
+      "title": "AIモデルが物理法則を直観的に理解しはじめた",
+      "summary": "MetaのV-JEPA AIモデルが物理法則を直感的に理解し、予期しない事象に対して「驚き」に相当する反応を示すことが研究で示された。AIが現実世界の物理的性質を学習する能力の向上は、ロボット制御や科学研究への応用に大きな可能性をもたらすと期待されている。",
+      "url": "https://wired.jp/article/how-one-ai-model-creates-a-physical-intuition-of-its-environment/",
+      "source": "WIRED Japan",
+      "category": "モデル・研究",
+      "tags": ["Meta", "V-JEPA", "物理AI", "機械学習"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 43,
+      "title": "AIチャットボットが医師から"処方"される時代がやってくる",
+      "summary": "RecovryAIがFDAの「ブレイクスルーデバイス」指定を取得し、AIチャットボットが医師から処方される時代が現実になりつつある。医療分野での生成AI活用が制度的にも認められ始めており、ヘルスケアAIの普及に弾みがつく可能性がある。",
+      "url": "https://wired.jp/article/recovryai-fda-breakthrough-device-ai-virtual-care-assistant/",
+      "source": "WIRED Japan",
+      "category": "ツール・製品",
+      "tags": ["医療AI", "FDA", "RecovryAI", "ヘルスケア"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 44,
+      "title": "【2026年最新】生成AIの規制動向を解説！日本と海外の法律や企業の対策",
+      "summary": "2026年3月時点の日本と海外の生成AI規制動向を包括的に解説した記事。EU AI法が2026年8月の全面適用に向けて進んでいる中、日本はイノベーションを阻害しないソフトロー中心のアプローチを維持しており、グローバル企業は各国の規制に対応した戦略が求められている。",
+      "url": "https://a-x.inc/blog/ai-regulation/",
+      "source": "株式会社AX",
+      "category": "規制・社会",
+      "tags": ["AI規制", "EU AI法", "日本", "コンプライアンス"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 45,
+      "title": "Gemini 2.5: Our most intelligent models are getting even better",
+      "summary": "Google DeepMindがGemini 2.5シリーズの性能向上を報告した。後継となるGemini 3シリーズへの橋渡しとして位置付けられており、推論能力とマルチモーダル処理の大幅改善が達成されたとしている。",
+      "url": "https://deepmind.google/blog/gemini-25-our-world-leading-model-is-getting-even-better/",
+      "source": "Google DeepMind",
+      "category": "モデル・研究",
+      "tags": ["Gemini 2.5", "Google DeepMind", "マルチモーダル"],
+      "published": "2026-03-26"
+    },
+    {
+      "id": 46,
+      "title": "Introducing Gemini 3 Flash: Benchmarks, global availability",
+      "summary": "Google DeepMindがGemini 3 Flashの詳細なベンチマーク結果とグローバル展開計画を発表した。高速処理と低コストを両立するFlashモデルとして、開発者やエンタープライズ向けに広く普及が見込まれている。",
+      "url": "https://deepmind.google/blog/gemini-3-flash-frontier-intelligence-built-for-speed/",
+      "source": "Google DeepMind",
+      "category": "モデル・研究",
+      "tags": ["Gemini 3 Flash", "Google DeepMind", "LLM"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 47,
+      "title": "AI agent trends 2026 report | Google Cloud",
+      "summary": "Google Cloudが2026年のAIエージェントトレンドレポートを公開し、エンタープライズでの自律型AIエージェントの普及状況と将来展望を分析している。Gartnerによれば2026年末までにエンタープライズアプリの40%がAIエージェントを組み込むと予測されている。",
+      "url": "https://cloud.google.com/resources/content/ai-agent-trends-2026",
+      "source": "Google Cloud",
+      "category": "ビジネス",
+      "tags": ["AIエージェント", "Google Cloud", "エンタープライズ"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 48,
+      "title": "2026年3月AIスタートアップ資金調達レポート",
+      "summary": "2026年3月のAIスタートアップへの資金調達動向をまとめたQiitaの記事。3月だけで総額60億ドル以上がAIスタートアップに投資されており、ワールドモデル・物理AI・エンタープライズAIへの投資が特に活発化していると報告している。",
+      "url": "https://qiita.com/hello_giita/items/65364de5fbc53f585170",
+      "source": "Qiita",
+      "category": "ビジネス",
+      "tags": ["AIスタートアップ", "資金調達", "投資"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 49,
+      "title": "AI Lab、機械学習分野のトップカンファレンス「ICLR 2026」にて5本の論文採択",
+      "summary": "サイバーエージェントのAI Labが機械学習の最高峰カンファレンスICLR 2026に5本の論文を採択された。約19,000件の投稿から28%が採択される中、自然言語処理・強化学習・マルチモーダルなど複数分野での研究成果が認められた。",
+      "url": "https://www.cyberagent.co.jp/news/detail/id=33010",
+      "source": "CyberAgent",
+      "category": "モデル・研究",
+      "tags": ["ICLR 2026", "CyberAgent", "機械学習", "論文"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 50,
+      "title": "Claudeのメモリ機能が無料開放、ChatGPTからの「記憶」引き継ぎにも対応",
+      "summary": "AnthropicがClaudeのメモリ機能を無料プランに開放し、ChatGPTなど他のAIサービスからメモリデータを引き継げる機能を追加した。2026年3月初旬の発表で、AI各社が競ってユーザー囲い込みを強化している市場状況を反映している。",
+      "url": "https://smhn.info/202603-claude-free-memory-import",
+      "source": "すまほん!!",
+      "category": "ツール・製品",
+      "tags": ["Claude", "Anthropic", "メモリ機能", "無料プラン"],
+      "published": "2026-03-03"
+    },
+    {
+      "id": 51,
+      "title": "「Google マップ」が大幅アップデート、Geminiと融合",
+      "summary": "Googleはスマートフォン向けGoogle マップを大幅にアップデートし、Gemini AIを統合した新機能を追加した。自然言語での場所検索「Ask Maps」と3D立体表示のナビゲーション機能が追加され、10年以上ぶりの大規模刷新となっている。",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2093079.html",
+      "source": "ケータイ Watch",
+      "category": "ツール・製品",
+      "tags": ["Google Maps", "Gemini", "AI統合"],
+      "published": "2026-03-12"
+    },
+    {
+      "id": 52,
+      "title": "Donating the Model Context Protocol and establishing the Agentic AI Foundation",
+      "summary": "AnthropicがMCP（Model Context Protocol）をオープンソースとして寄贈し、「Agentic AI Foundation」の設立を発表した。MCPをコミュニティ主導で発展させることで、AIエージェントと外部ツールの標準的な接続仕様として普及を促進する狙いがある。",
+      "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation",
+      "source": "Anthropic Blog",
+      "category": "規制・社会",
+      "tags": ["MCP", "Anthropic", "オープンソース", "AIエージェント"],
+      "published": "2026-03-29"
+    },
+    {
+      "id": 53,
+      "title": "Gemini アプリ、ChatGPT や Claude からのチャット履歴とメモリーのインポート機能を提供開始",
+      "summary": "GoogleのGeminiアプリが2026年3月26日、競合AIからのデータ移行機能を開始した。チャット履歴とメモリ情報をインポートすることで、ユーザーの乗り換えコストを大幅に削減する。この機能はGemini 3.1 Proを搭載した最新版アプリで利用可能となっている。",
+      "url": "https://helentech.jp/news-gemini-83828/",
+      "source": "HelenTech",
+      "category": "ツール・製品",
+      "tags": ["Gemini", "Google", "ChatGPT", "Claude", "乗り換え"],
+      "published": "2026-03-26"
+    },
+    {
+      "id": 54,
+      "title": "「Claudeのメモリ機能が無料開放、ChatGPTからの移行案内」アスキー報道",
+      "summary": "AnthropicのClaude無料プランへのメモリ機能開放とChatGPTからの移行ツール提供についてYahoo!ニュース経由でアスキーが報じた。AI囲い込み競争が激化する中で、AnthropicがユーザーにClaude移行を促す戦略を強化していると分析されている。",
+      "url": "https://news.yahoo.co.jp/articles/0ee5880abc129d619d8bb358dfa6ae6a7080c12f",
+      "source": "Yahoo!ニュース（アスキー）",
+      "category": "ツール・製品",
+      "tags": ["Claude", "Anthropic", "メモリ機能", "ChatGPT"],
+      "published": "2026-03-03"
+    },
+    {
+      "id": 55,
+      "title": "ChatGPTの新モデル「GPT-5.2」、GeminiやClaudeと比較してわかったこと（Forbes JAPAN）",
+      "summary": "Forbes JAPANがGPT-5.2とGemini・Claude各モデルとの比較テストを実施し、その結果をYahoo!ニュースで報じた。各モデルの得意・不得意分野と実用上の使い分け方針について詳しく解説している。",
+      "url": "https://news.yahoo.co.jp/articles/c332a3f23ab0147fdf913b4c5b4e6df68b1e68d1",
+      "source": "Yahoo!ニュース（Forbes JAPAN）",
+      "category": "モデル・研究",
+      "tags": ["GPT-5.2", "OpenAI", "Gemini", "Claude", "比較"],
+      "published": "2026-03-29"
+    }
+  ]
+}
