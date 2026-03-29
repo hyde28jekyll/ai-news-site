@@ -104,7 +104,7 @@
 
   async function loadData() {
     try {
-      const res = await fetch('./data/today.json');
+      const res = await fetch('./today.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       allArticles = Array.isArray(data.articles) ? data.articles : [];
