@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "name": "Yahoo Japanニュース",
+      "query": "site:news.yahoo.co.jp 生成AI OR LLM OR ChatGPT OR Claude OR Gemini"
+    },
+    {
+      "name": "ledge.ai",
+      "query": "site:ledge.ai 生成AI OR LLM"
+    },
+    {
+      "name": "AIsmiley",
+      "query": "site:aismiley.co.jp AI"
+    },
+    {
+      "name": "Wired Japan",
+      "query": "site:wired.jp AI 生成"
+    },
+    {
+      "name": "ITmedia AI",
+      "query": "site:itmedia.co.jp AI OR 生成AI OR LLM OR ChatGPT OR Claude OR Gemini 2026"
+    },
+    {
+      "name": "Gigazine",
+      "query": "site:gigazine.net AI OR 人工知能"
+    },
+    {
+      "name": "OpenAI Blog",
+      "query": "site:openai.com/blog"
+    },
+    {
+      "name": "Anthropic Blog",
+      "query": "site:anthropic.com/news"
+    },
+    {
+      "name": "Google DeepMind",
+      "query": "site:deepmind.google blog OR news"
+    },
+    {
+      "name": "Zenn",
+      "query": "site:zenn.dev 生成AI OR LLM OR ChatGPT OR Claude OR Gemini OR AIエージェント 2026"
+    },
+    {
+      "name": "note",
+      "query": "site:note.com 生成AI OR LLM OR AIエージェント OR ChatGPT OR Claude 2026"
+    }
+  ]
+}

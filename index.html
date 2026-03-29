@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖 生成AI最新情報</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0a0a14; color: #e2e2f0; font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    header { position: sticky; top: 0; z-index: 100; background: linear-gradient(135deg, #13131f, #1a1a3e); padding: 12px 16px 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.5); }
+    .header-title { font-size: 1.2rem; font-weight: 700; letter-spacing: 0.03em; }
+    .header-sub { font-size: 0.78rem; color: #7878a0; margin-top: 2px; }
+    .tabs-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .tabs-wrapper::-webkit-scrollbar { display: none; }
+    .tabs { display: flex; gap: 6px; padding: 8px 16px 4px; white-space: nowrap; }
+    .cat-tab { display: inline-block; padding: 5px 11px; border-radius: 20px; font-size: 0.78rem; cursor: pointer; border: none; background: #1a1a2e; color: #888; user-select: none; }
+    .cat-tab.active { background: #2a4a8a; color: #fff; }
+    .tag-tab { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 0.73rem; cursor: pointer; border: none; background: #1a1a2e; color: #888; user-select: none; }
+    .tag-tab.active { background: #8a4a2a; color: #fff; }
+    .container { max-width: 640px; width: 100%; margin: 0 auto; padding: 12px 16px 24px; flex: 1; }
+    .loading { text-align: center; padding: 48px 16px; color: #7878a0; }
+    .spinner { width: 36px; height: 36px; border: 3px solid #1e1e3a; border-top-color: #4a7adf; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 12px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .empty-state { text-align: center; padding: 48px 16px; color: #7878a0; font-size: 0.95rem; line-height: 1.6; }
+    .article-card { padding: 14px 0; border-bottom: 1px solid #1e1e3a; }
+    .article-card:last-child { border-bottom: none; }
+    .article-title a { color: #90c0ff; text-decoration: none; font-size: 0.97rem; font-weight: 600; line-height: 1.45; display: block; }
+    .article-title a:hover { color: #b8d8ff; text-decoration: underline; }
+    .article-summary { color: #aaa; font-size: 0.85rem; line-height: 1.55; margin-top: 6px; }
+    .article-footer { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .badge-category { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; background: #1e3a6a; color: #90c0ff; border: 1px solid #2a5090; }
+    .badge-tag { display: inline-block; padding: 2px 7px; border-radius: 10px; font-size: 0.68rem; background: #1e1e3a; color: #8888bb; border: 1px solid #2a2a50; }
+    .article-source { margin-left: auto; font-size: 0.72rem; color: #666; }
+    footer { text-align: center; padding: 16px; font-size: 0.72rem; color: #444466; border-top: 1px solid #1e1e3a; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-title">🤖 生成AI最新情報</div>
+  <div class="header-sub" id="header-sub">読み込み中...</div>
+  <div class="tabs-wrapper"><div class="tabs" id="cat-tabs"></div></div>
+  <div class="tabs-wrapper"><div class="tabs" id="tag-tabs"></div></div>
+</header>
+<div class="container" id="main-container">
+  <div class="loading" id="loading-state"><div class="spinner"></div>読み込み中...</div>
+</div>
+<footer>生成AI最新情報 &mdash; 自動更新システム（毎朝6時JST）</footer>
+<script>
+  const CATEGORIES = ['すべて', 'モデル・研究', 'ビジネス', 'ツール・製品', '規制・社会'];
+  let allArticles = [], activeCat = 'すべて', activeTag = 'すべて';
+
+  function formatDate(s) {
+    if (!s) return '';
+    const d = new Date(s + 'T00:00:00');
+    return `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
+  }
+  function esc(s) {
+    return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  }
+  function getUniqueTags(articles) {
+    const s = new Set();
+    articles.forEach(a => (a.tags||[]).forEach(t => s.add(t)));
+    return ['すべて', ...Array.from(s).sort()];
+  }
+  function filterArticles() {
+    return allArticles.filter(a => {
+      const c = activeCat === 'すべて' || a.category === activeCat;
+      const t = activeTag === 'すべて' || (a.tags||[]).includes(activeTag);
+      return c && t;
+    });
+  }
+  function renderCatTabs() {
+    document.getElementById('cat-tabs').innerHTML = CATEGORIES.map(cat => {
+      const n = cat === 'すべて' ? allArticles.length : allArticles.filter(a=>a.category===cat).length;
+      return `<button class="cat-tab${cat===activeCat?' active':''}" onclick="setCat('${esc(cat)}')">${esc(cat)} (${n})</button>`;
+    }).join('');
+  }
+  function renderTagTabs() {
+    const base = activeCat === 'すべて' ? allArticles : allArticles.filter(a=>a.category===activeCat);
+    const tags = getUniqueTags(base);
+    if (!tags.includes(activeTag)) activeTag = 'すべて';
+    document.getElementById('tag-tabs').innerHTML = tags.map(tag => {
+      const n = tag === 'すべて' ? base.length : base.filter(a=>(a.tags||[]).includes(tag)).length;
+      return `<button class="tag-tab${tag===activeTag?' active':''}" onclick="setTag('${esc(tag)}')">${esc(tag)} (${n})</button>`;
+    }).join('');
+  }
+  function renderArticles() {
+    const c = document.getElementById('main-container');
+    const list = filterArticles();
+    if (!list.length) { c.innerHTML = '<div class="empty-state">該当する記事がありません</div>'; return; }
+    c.innerHTML = list.map(a => `
+      <div class="article-card">
+        <div class="article-title"><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></div>
+        ${a.summary?`<div class="article-summary">${esc(a.summary)}</div>`:''}
+        <div class="article-footer">
+          ${a.category?`<span class="badge-category">${esc(a.category)}</span>`:''}
+          ${(a.tags||[]).map(t=>`<span class="badge-tag">${esc(t)}</span>`).join('')}
+          ${a.source?`<span class="article-source">${esc(a.source)}</span>`:''}
+        </div>
+      </div>`).join('');
+  }
+  function setCat(cat) { activeCat = cat; renderCatTabs(); renderTagTabs(); renderArticles(); }
+  function setTag(tag) { activeTag = tag; renderTagTabs(); renderArticles(); }
+
+  async function loadData() {
+    try {
+      const res = await fetch('./today.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      allArticles = Array.isArray(data.articles) ? data.articles : [];
+      document.getElementById('header-sub').textContent = `${formatDate(data.date)}　${allArticles.length}件`;
+      renderCatTabs(); renderTagTabs();
+      document.getElementById('loading-state')?.remove();
+      renderArticles();
+    } catch(e) {
+      document.getElementById('header-sub').textContent = '配信情報なし';
+      document.getElementById('cat-tabs').innerHTML = '';
+      document.getElementById('tag-tabs').innerHTML = '';
+      document.getElementById('main-container').innerHTML = '<div class="empty-state">本日のニュースはまだ配信されていません 🛰️</div>';
+    }
+  }
+  loadData();
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "date": "2026-03-28",
+  "updated_at": "2026-03-28T12:00:00Z",
+  "articles": [
+    {
+      "id": 1,
+      "title": "2026年の生成AIはどうなるのか",
+      "summary": "2026年の生成AIトレンドを解説。AIエージェントの本格普及、国産LLMの進展、企業のAI投資拡大などが主要テーマとなっている。",
+      "url": "https://sorimachi.co.jp/column/gadget/20260216_01/",
+      "source": "ソリマチ株式会社",
+      "category": "モデル・研究",
+      "tags": ["AIエージェント", "トレンド", "2026"],
+      "published": "2026-02-16"
+    },
+    {
+      "id": 2,
+      "title": "週刊生成AI with AWS – 2026/2/9週",
+      "summary": "Amazon BedrockがDeepSeek V3.2やKimi K2.5など6つのオープンウェイトモデルを追加サポート。企業でのコード生成や推論タスクがより低コストで実現可能に。",
+      "url": "https://aws.amazon.com/jp/blogs/news/weekly-genai-20260209/",
+      "source": "Amazon Web Services ブログ",
+      "category": "ビジネス・産業",
+      "tags": ["AWS", "Bedrock", "DeepSeek"],
+      "published": "2026-02-09"
+    },
+    {
+      "id": 3,
+      "title": "2025年10大AIニュースと2026年の展望",
+      "summary": "2025年の主要AIニュースを振り返り、2026年の生成AI展望を解説。エージェントの実運用、著作権問題、推論コスト、企業ITへの組み込みが主要テーマ。",
+      "url": "https://note.com/it_navi/n/n5c48911872df",
+      "source": "IT navi",
+      "category": "モデル・研究",
+      "tags": ["トレンド", "2026展望", "AIガバナンス"],
+      "published": "2026-01-01"
+    }
+  ]
+}
