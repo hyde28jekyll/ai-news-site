@@ -1,141 +1,21 @@
 {
-  "date": "2026-04-11",
-  "updated_at": "2026-04-11T09:00:00Z",
+  "date": "2026-04-15",
+  "updated_at": "2026-04-15T00:00:00Z",
   "articles": [
     {
       "id": 1,
-      "title": "Weekly Generative AI News Roundup (April 4–11, 2026): Key Model Moves and Their Practical Impact",
-      "summary": "2026年4月4〜11日の週における生成AIニュースをまとめたレポート。主要モデルのアップデートと実務への影響を解説。OpenAIの安全性フェローシップ発表や各社の新機能ロールアウトが話題となった。",
-      "url": "https://blog.greeden.me/en/2026/04/09/weekly-generative-ai-news-roundup-april-4-11-2026-key-model-moves-and-their-practical-impact/",
-      "source": "greeden.me",
+      "title": "Anthropicが新AI「Claude Mythos」を発表。GPT-5.4・Gemini 3.1 Proを大幅に上回る超高性能モデル",
+      "summary": "Anthropicが2026年4月7日に「Claude Mythos Preview」を発表。APIベンチマークでGPT-5.4およびGemini 3.1 Proを大幅に上回る性能を示した。安全上の懸念から、一部のサイバーセキュリティパートナーにのみ提供される。",
+      "url": "https://news.yahoo.co.jp/articles/01aeb045fe5e06de692fc31a9d3a2a75c301408b",
+      "source": "Yahoo!ニュース（ギズモード・ジャパン）",
       "category": "モデル・研究",
-      "tags": ["OpenAI", "Anthropic", "Google", "生成AI"],
-      "published": "2026-04-09"
+      "tags": ["Claude", "Anthropic", "Claude Mythos"],
+      "published": "2026-04-07"
     },
     {
       "id": 2,
-      "title": "Google Gemini Adds Visualizations in Chat, Closes Gap to Claude and ChatGPT",
-      "summary": "Google GeminiがチャットUI内でインタラクティブな可視化機能を追加した。3Dモデル・物理シミュレーション・調整可能なチャートをチャット内で直接生成でき、Proモデルユーザーへグローバルにロールアウトされている。",
-      "url": "https://winbuzzer.com/2026/04/10/google-gemini-now-generates-interactive-visualizations-in-ch-xcxwbn/",
-      "source": "WinBuzzer",
-      "category": "ツール・製品",
-      "tags": ["Gemini", "Google"],
-      "published": "2026-04-10"
-    },
-    {
-      "id": 3,
-      "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
-      "summary": "Google DeepMindがGemini Robotics 1.5を発表し、物理世界でAIエージェントを動作させる技術を披露した。Gemini API経由でGoogle AI Studioから開発者向けに提供予定で、選定パートナーにも先行提供されている。",
-      "url": "https://deepmind.google/discover/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/",
-      "source": "Google DeepMind",
-      "category": "モデル・研究",
-      "tags": ["Gemini", "Google", "DeepMind", "AIエージェント"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 4,
-      "title": "Advanced version of Gemini with Deep Think officially achieves gold-medal standard at the International Mathematical Olympiad",
-      "summary": "Google DeepMindのGemini Deep Thinkが国際数学オリンピック（IMO）で金メダルレベルの成績を達成した。6問中5問を完璧に解き35点を獲得し、AI推論能力の新たな到達点を示した。",
-      "url": "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
-      "source": "Google DeepMind",
-      "category": "モデル・研究",
-      "tags": ["Gemini", "Google", "DeepMind"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 5,
-      "title": "Google検索のAI生成サマリーは毎時間数千万件の虚偽情報を含むと調査が明らかに",
-      "summary": "Googleの検索結果に表示されるAI生成サマリー（AI Overviews）に膨大な数の虚偽情報が含まれていることが調査で判明した。AIによる情報提供の信頼性と品質管理が改めて問われている。",
-      "url": "https://gigazine.net/gsc_news/en/20260408-google-ai-overview-accuracy/",
-      "source": "GIGAZINE",
-      "category": "規制・社会",
-      "tags": ["Google", "生成AI", "AI信頼性"],
-      "published": "2026-04-08"
-    },
-    {
-      "id": 6,
-      "title": "2026年版｜生成AI勢力図と世界各国の採用状況",
-      "summary": "2026年時点の生成AIサービスのグローバルシェアを分析した記事。ChatGPTのシェアが約64.5%まで低下し、Geminiが21.5%まで急成長するなど市場構造が大きく変化した。各国の採用状況と企業導入トレンドも詳述している。",
-      "url": "https://note.com/witty_ixora1236/n/nb190567f875e",
-      "source": "note",
-      "category": "モデル・研究",
-      "tags": ["ChatGPT", "Gemini", "Claude", "生成AI"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 7,
-      "title": "GLM-5.1 とは？ Claude Opus 4.6の94%のコーディング性能で月$10から使える",
-      "summary": "中国発のオープンソースLLM「GLM-5.1」がClaude Opus 4.6の94%のコーディング性能を持ちながら月10ドルから利用できることが話題となっている。コスト対性能比の高さが開発者コミュニティで注目を集めている。",
-      "url": "https://note.com/kazu_t/n/n4b28ab63d210",
-      "source": "note",
-      "category": "モデル・研究",
-      "tags": ["GLM", "Claude", "LLM", "コーディング"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 8,
-      "title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation",
-      "summary": "AnthropicがシリーズGで300億ドルを調達し、評価額が3,800億ドルに達した。年間収益のラン・レートは140億ドルに達しており、過去3年間で毎年10倍以上の成長を達成している。",
-      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
-      "source": "Anthropic",
-      "category": "ビジネス",
-      "tags": ["Anthropic", "資金調達", "Claude"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 9,
-      "title": "Anthropic expands partnership with Google and Broadcom for next-generation compute",
-      "summary": "AnthropicがGoogleとBroadcomと次世代コンピュートに関する大規模提携を拡大した。2027年以降に稼働予定の次世代TPUの複数ギガワット分の容量を確保する合意が締結された。",
-      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "source": "Anthropic",
-      "category": "ビジネス",
-      "tags": ["Anthropic", "Google", "Broadcom", "AI基盤"],
-      "published": "2026-04-06"
-    },
-    {
-      "id": 10,
-      "title": "Anthropic acquires Vercept to advance Claude's computer use capabilities",
-      "summary": "AnthropicがVercept社を買収し、Claudeのコンピューター操作（Computer Use）機能を強化する方針を発表した。AIエージェントが実際のコンピューター画面を操作・自動化する能力の向上を目指す。",
-      "url": "https://www.anthropic.com/news/acquires-vercept",
-      "source": "Anthropic",
-      "category": "ビジネス",
-      "tags": ["Anthropic", "Claude", "AIエージェント", "M&A"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 11,
-      "title": "Anthropic invests $50 billion in American AI infrastructure",
-      "summary": "Anthropicがアメリカ国内のAIコンピューティングインフラに500億ドルを投資すると発表した。テキサス州とニューヨーク州でFluidstackと連携しデータセンターを建設し、国内AI産業の競争力強化を図る。",
-      "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure",
-      "source": "Anthropic",
-      "category": "ビジネス",
-      "tags": ["Anthropic", "AI基盤", "インフラ"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 12,
-      "title": "Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises",
-      "summary": "SnowflakeとAnthropicが2億ドルの複数年パートナーシップを締結し、ClaudeモデルをSnowflakeプラットフォームの12,600社以上のグローバル顧客に提供することを発表した。エンタープライズ向けAIエージェント活用が加速する。",
-      "url": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
-      "source": "Anthropic",
-      "category": "ビジネス",
-      "tags": ["Anthropic", "Snowflake", "Claude", "エンタープライズ"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 13,
-      "title": "Accenture and Anthropic launch multi-year partnership to move enterprises from AI pilots to production",
-      "summary": "AccentureとAnthropicがAccenture Anthropic Business Groupを設立し、多年契約の提携を発表した。約30,000人のAccentureプロフェッショナルがClaudeのトレーニングを受け、企業のAIパイロットから本格稼働への移行を支援する。",
-      "url": "https://www.anthropic.com/news/anthropic-accenture-partnership",
-      "source": "Anthropic",
-      "category": "ビジネス",
-      "tags": ["Anthropic", "Accenture", "Claude", "エンタープライズ"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 14,
       "title": "OpenAI raises a record $122 billion as revenue crosses $2 billion per month",
-      "summary": "OpenAIが史上最大となる1,220億ドルの資金調達を完了し、月間収益が20億ドルを超えたと発表した。AIスーパーアプリの構築やインフラ投資の加速を目指しており、業界全体での資金調達競争が激化している。",
+      "summary": "OpenAIが過去最高となる1,220億ドルの資金調達を完了し、評価額は8,520億ドルに達した。月間収益が20億ドルを突破し、Amazon・Nvidia・SoftBank・Microsoftが主導するラウンドで歴史的な調達を実現した。",
       "url": "https://www.coindesk.com/tech/2026/04/01/openai-raises-a-record-usd122-billion-at-as-revenue-crosses-usd2-billion-per-month",
       "source": "CoinDesk",
       "category": "ビジネス",
@@ -143,164 +23,334 @@
       "published": "2026-04-01"
     },
     {
-      "id": 15,
-      "title": "AI compute race intensifies as OpenAI, Google, Amazon and Anthropic ramp up infrastructure bets",
-      "summary": "OpenAI・Google・Amazon・Anthropicが相次いでAIインフラへの大型投資を発表し、コンピュート確保競争が激化している。各社が独自のデータセンター建設や半導体メーカーとの提携を急ピッチで進めている。",
-      "url": "https://startupnews.fyi/2026/04/11/ai-compute-race-intensifies-as-openai-google-amazon-and-anthropic-ramp-up-infrastructure-bets",
-      "source": "Startup News",
-      "category": "ビジネス",
-      "tags": ["OpenAI", "Google", "Amazon", "Anthropic", "AI基盤"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 16,
-      "title": "Broadcom agrees to expanded chip deals with Google, Anthropic",
-      "summary": "BroadcomがGoogleおよびAnthropicとチップ供給契約を大幅に拡大することで合意した。次世代AIインフラの整備に向け半導体大手との協力関係が強化されており、AIアクセラレーター需要が急増している。",
-      "url": "https://www.cnbc.com/2026/04/06/broadcom-agrees-to-expanded-chip-deals-with-google-anthropic.html",
-      "source": "CNBC",
-      "category": "ビジネス",
-      "tags": ["Broadcom", "Google", "Anthropic", "半導体"],
-      "published": "2026-04-06"
-    },
-    {
-      "id": 17,
-      "title": "東京大学発AIスタートアップ・燈（あかり）株式会社、三菱電機から50億円の資金調達を実施。企業評価額は1,000億円超に",
-      "summary": "東京大学発のAIスタートアップ「燈（あかり）」が三菱電機から50億円の資金調達を実施し、企業評価額が1,000億円を超えた。産業・製造分野に特化したAI開発を強化し、日本のAIエコシステムを牽引する存在として期待されている。",
-      "url": "https://prtimes.jp/main/html/rd/p/000000055.000083531.html",
-      "source": "PR TIMES",
-      "category": "ビジネス",
-      "tags": ["AIスタートアップ", "資金調達", "日本AI", "三菱電機"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 18,
-      "title": "Anthropic売上$30BでOpenAI超え｜Google・Broadcomと巨額コンピュート契約",
-      "summary": "Anthropicの年間売上ラン・レートが300億ドルに達し、OpenAIを超えた可能性があると報じられた。同社はGoogleおよびBroadcomとの大規模なコンピュート供給契約も締結しており、AI業界の勢力図が塗り替わりつつある。",
-      "url": "https://meta-tag.site/2026-04-09-anthropic-revenue-30b-surpasses-openai-google-broadcom/",
-      "source": "AGI時代のビジネスAI研究所",
-      "category": "ビジネス",
-      "tags": ["Anthropic", "OpenAI", "Google", "Broadcom"],
-      "published": "2026-04-09"
-    },
-    {
-      "id": 19,
-      "title": "Anthropic、ChatGPTなどからClaudeへの移行をしやすくするツール提供開始",
-      "summary": "AnthropicがChatGPTやGeminiからClaudeへの移行を容易にするツールの提供を開始した。ユーザーが他サービスから簡単にClaude環境へ移行できるよう設計されており、シェア拡大に向けた戦略の一環とみられる。",
-      "url": "https://www.itmedia.co.jp/aiplus/articles/2603/03/news070.html",
-      "source": "ITmedia AI+",
-      "category": "ツール・製品",
-      "tags": ["Anthropic", "Claude", "ChatGPT"],
-      "published": "2026-03-03"
-    },
-    {
-      "id": 20,
-      "title": "Designing delightful frontends with GPT-5.4",
-      "summary": "OpenAIがGPT-5.4を使ってポリッシュされたフロントエンドデザインを実現するためのテクニックを開発者向けに公開した。プロダクション品質のUI設計を生成AIで実現するための実践的ガイドとして注目を集めている。",
-      "url": "https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4",
-      "source": "OpenAI Developers Blog",
-      "category": "ツール・製品",
-      "tags": ["OpenAI", "GPT-5.4", "フロントエンド"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 21,
-      "title": "JAPAN AI、自律型AIエージェント「JAPAN AI AGENT」を提供開始",
-      "summary": "JAPAN AIが自律型AIエージェント「JAPAN AI AGENT」の提供を開始した。営業・マーケティング・人事など各部門の業務を支援する実用的なエージェントで、日本語に最適化されたAIソリューションとして注目されている。",
-      "url": "https://aismiley.co.jp/ai_news/japan-ai-agent-generative-ai-release/",
-      "source": "AIsmiley",
-      "category": "ツール・製品",
-      "tags": ["AIエージェント", "JAPAN AI", "日本AI"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 22,
-      "title": "最新生成AI活用事例120社を一挙公開！AIエージェントの最前線（2026年3月更新）",
-      "summary": "Google Cloudが生成AIとAIエージェントの企業活用事例を120社分まとめて公開した。業界横断的な活用事例を通じて、AIエージェントが現場の業務をどのように変革しているかを詳しく解説している。",
-      "url": "https://cloud.google.com/blog/ja/products/ai-machine-learning/120-case-studies-on-the-latest-generative-ai-applications-released?hl=ja",
-      "source": "Google Cloud Blog",
-      "category": "ツール・製品",
-      "tags": ["Google", "生成AI", "AIエージェント", "活用事例"],
-      "published": "2026-03-31"
-    },
-    {
-      "id": 23,
-      "title": "自動車生産技術の未来を拓く生成AI活用｜2026年の最新動向を徹底解説",
-      "summary": "自動車製造分野における生成AI活用の最新動向を解説した記事。設計最適化・品質管理・生産ライン自動化など、製造現場でのAI実装事例と2026年のトレンドを包括的にまとめている。",
-      "url": "https://media.emuniinc.jp/2026/04/07/automotive-production-genai-2026/",
-      "source": "エムニ",
-      "category": "ツール・製品",
-      "tags": ["生成AI", "製造業", "自動車", "活用事例"],
-      "published": "2026-04-07"
-    },
-    {
-      "id": 24,
-      "title": "NVIDIA Ignites the Next Industrial Revolution in Knowledge Work With Open Agent Development Platform",
-      "summary": "NVIDIAが自律的・自己進化型エンタープライズAIエージェントのためのオープンソースプラットフォームを発表した。エージェントの安全性・セキュリティ・効率性向上を重視した設計で、知識労働の自動化を促進する。",
-      "url": "https://nvidianews.nvidia.com/news/ai-agents",
-      "source": "NVIDIA Newsroom",
-      "category": "ツール・製品",
-      "tags": ["NVIDIA", "AIエージェント", "オープンソース"],
-      "published": "2026-04-11"
-    },
-    {
-      "id": 25,
-      "title": "AI Dispatch: Daily Trends and Innovations – April 9, 2026 | Anthropic, Google AI Overviews, OpenAI",
-      "summary": "2026年4月9日のAI業界の主要動向をまとめたレポート。AnthropicのProject Glasswing発表、GoogleのAI Overviews改善、OpenAIの新機能リリースなどが取り上げられ、AI競争の最前線を網羅的に報道している。",
-      "url": "https://hipther.com/latest-news/2026/04/09/109970/ai-dispatch-daily-trends-and-innovations-april-9-2026-anthropic-google-ai-overviews-openai-hyperfine-optive-ai/",
-      "source": "Hipther",
-      "category": "モデル・研究",
-      "tags": ["Anthropic", "Google", "OpenAI", "AI動向"],
-      "published": "2026-04-09"
-    },
-    {
-      "id": 26,
-      "title": "OpenAI, Anthropic, Google Unite to Combat Model Copying in China",
-      "summary": "OpenAI・Anthropic・GoogleがFrontier Model Forum経由で情報共有を強化し、中国によるAIモデル盗用（アドバーサリアル蒸留）への対抗策を共同で講じると発表した。2026年4月6〜7日に協調行動が明らかになった。",
+      "id": 3,
+      "title": "OpenAI、Anthropic、Google Unite to Combat Model Copying in China",
+      "summary": "OpenAI・Anthropic・Googleが2026年4月6〜7日、中国企業によるモデル盗用（adversarial distillation）に対抗するため共同声明を発表。Frontier Model Forumを通じて情報を共有し、AI知財保護で史上初の三社連合を形成した。",
       "url": "https://www.bloomberg.com/news/articles/2026-04-06/openai-anthropic-google-unite-to-combat-model-copying-in-china",
       "source": "Bloomberg",
       "category": "規制・社会",
-      "tags": ["OpenAI", "Anthropic", "Google", "AI安全保障"],
+      "tags": ["OpenAI", "Anthropic", "Google", "規制"],
       "published": "2026-04-06"
     },
     {
-      "id": 27,
-      "title": "Anthropic、カリフォルニア州フロンティアAI透明性法（SB 53）対応のコンプライアンスフレームワークを公開",
-      "summary": "AnthropicがカリフォルニアのTransparency in Frontier AI Act（SB 53）に対応するコンプライアンスフレームワークを公開した。フロンティアAI開発における透明性確保と安全基準への取り組みを詳細に示している。",
-      "url": "https://www.anthropic.com/news/compliance-framework-SB53",
+      "id": 4,
+      "title": "「AI博覧会 Spring 2026」来場者数12,154名で過去最高を記録！フィジカルAIやAIエージェントへの関心高まる",
+      "summary": "2026年4月7〜8日に東京国際フォーラムで開催された「AI博覧会 Spring 2026」が来場者数12,154名で過去最高を記録した。フィジカルAI・ロボットゾーンを新設し、200点以上のAI製品が展示される盛況となった。",
+      "url": "https://aismiley.co.jp/ai_news/aiexpo_spring_2026_report02/",
+      "source": "AIsmiley",
+      "category": "ツール・製品",
+      "tags": ["AI博覧会", "フィジカルAI", "AIエージェント"],
+      "published": "2026-04-08"
+    },
+    {
+      "id": 5,
+      "title": "Hermes Agent: The New Growing AI Agent by NousResearch",
+      "summary": "NousResearchが2026年4月15日にHermes Agentを発表した。「ユーザーとともに成長するエージェント」というコンセプトのもとGitHubでホストされる新しいインテリジェントAIエージェントプロジェクト。",
+      "url": "https://aitoolly.com/ai-news/article/2026-04-15-nousresearch-unveils-hermes-agent-a-new-intelligent-ai-agent-designed-to-grow-with-users",
+      "source": "AIToolly",
+      "category": "モデル・研究",
+      "tags": ["NousResearch", "Hermes Agent", "AIエージェント"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 6,
+      "title": "India's vibe-coding startup Emergent enters OpenClaw-like AI agent space",
+      "summary": "インドのバイブコーディングスタートアップEmergentが、メッセージング中心の自律型AIエージェント「Wingman」を発表した。OpenClaw的なAIエージェント市場に参入し、グローバル展開を目指す。",
+      "url": "https://techcrunch.com/2026/04/15/indias-vibe-coding-startup-emergent-enters-openclaw-like-ai-agent-space/",
+      "source": "TechCrunch",
+      "category": "ビジネス",
+      "tags": ["AIエージェント", "スタートアップ", "Emergent"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 7,
+      "title": "生成AI関連ニュース ベスト5（2026-04-03～2026-04-10）",
+      "summary": "2026年4月3〜10日の生成AI関連ニュースベスト5を週次でまとめたレポート。Claude Mythosの発表やOpenAI・Anthropic・Googleの対中連合など主要トピックを網羅している。",
+      "url": "https://gais.jp/news-2026-04-10/",
+      "source": "GAIS",
+      "category": "モデル・研究",
+      "tags": ["生成AI", "ニュースまとめ"],
+      "published": "2026-04-10"
+    },
+    {
+      "id": 8,
+      "title": "Latest AI Company News: Google, OpenAI, Anthropic, DeepSeek, Qwen, ZAI (April 10, 2026)",
+      "summary": "2026年4月10日時点でのGoogle・OpenAI・Anthropic・DeepSeek・Qwen・ZAIなど主要AI企業の最新動向をまとめたレポート。各社の新モデルリリースや戦略的動向を包括的に解説している。",
+      "url": "https://projectchat.ai/2026/04/10/latest-ai-company-news-google-openai-anthropic-deepseek-qwen-zai/",
+      "source": "ProjectChat.ai",
+      "category": "モデル・研究",
+      "tags": ["OpenAI", "Google", "Anthropic", "DeepSeek"],
+      "published": "2026-04-10"
+    },
+    {
+      "id": 9,
+      "title": "Anthropic expands partnership with Google and Broadcom for next-generation compute",
+      "summary": "Anthropicが2026年4月にGoogleおよびBroadcomとのパートナーシップを拡大し、複数ギガワット規模の次世代コンピューティングインフラ確保に合意した。Claude運用基盤の大幅強化に向けた戦略的投資となる。",
+      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
       "source": "Anthropic",
-      "category": "規制・社会",
-      "tags": ["Anthropic", "AI規制", "カリフォルニア", "安全性"],
-      "published": "2026-04-11"
+      "category": "ビジネス",
+      "tags": ["Anthropic", "Google", "Broadcom", "AIインフラ"],
+      "published": "2026-04-15"
     },
     {
-      "id": 28,
-      "title": "【2026年最新】生成AIの規制動向を解説！日本と海外の法律や企業の対策",
-      "summary": "2026年時点の日本と海外における生成AI規制の最新動向を解説した記事。EUのAI法施行から日本の「AI推進法」制定まで、企業が対応すべき法的要件と実践的な対策をまとめている。",
-      "url": "https://a-x.inc/blog/ai-regulation/",
-      "source": "株式会社AX",
-      "category": "規制・社会",
-      "tags": ["AI規制", "EU AI法", "日本AI法", "生成AI"],
-      "published": "2026-04-11"
+      "id": 10,
+      "title": "Anthropic invests $100 million into the Claude Partner Network",
+      "summary": "Anthropicが2026年のClaude Partner Networkに初期投資として1億ドルを拠出すると発表した。Snowflake・Replit・GitLabなどとの連携を通じてClaude搭載製品・サービスの普及促進を加速させる。",
+      "url": "https://www.anthropic.com/news/claude-partner-network",
+      "source": "Anthropic",
+      "category": "ビジネス",
+      "tags": ["Anthropic", "Claude", "パートナーシップ"],
+      "published": "2026-04-15"
     },
     {
-      "id": 29,
+      "id": 11,
+      "title": "東京大学発AIスタートアップ・燈（あかり）株式会社、三菱電機から50億円の資金調達を実施。企業評価額は1,000億円超に",
+      "summary": "東京大学発のAIスタートアップ・燈（あかり）が三菱電機から50億円の資金調達を実施し、企業評価額が1,000億円を超えた。製造業向けAIソリューションで国産AI開発をリードするユニコーン候補として躍進している。",
+      "url": "https://prtimes.jp/main/html/rd/p/000000055.000083531.html",
+      "source": "PR TIMES",
+      "category": "ビジネス",
+      "tags": ["燈", "スタートアップ", "資金調達", "国産AI"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 12,
+      "title": "Anthropic、ChatGPTなどからClaudeへの移行をしやすくするツール提供開始",
+      "summary": "AnthropicがChatGPTやGeminiからClaudeへの移行を容易にする専用ツールの提供を2026年3月3日に開始した。Memoryのフリープラン開放と合わせてユーザー獲得を加速させる戦略の一環として注目される。",
+      "url": "https://www.itmedia.co.jp/aiplus/articles/2603/03/news070.html",
+      "source": "ITmedia AI+",
+      "category": "ツール・製品",
+      "tags": ["Anthropic", "Claude", "ChatGPT", "移行ツール"],
+      "published": "2026-03-03"
+    },
+    {
+      "id": 13,
+      "title": "Anthropic invests $50 billion in American AI infrastructure",
+      "summary": "AnthropicがAmerican AIインフラへの500億ドル投資を発表。国内データセンター建設・電力確保に向けた大規模コミットメントで、米国AI産業の競争力強化を支援する。",
+      "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure",
+      "source": "Anthropic",
+      "category": "ビジネス",
+      "tags": ["Anthropic", "AIインフラ", "投資"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 14,
       "title": "デジタル庁、政府AI基盤「源内」で国産LLMを試用へ 7モデルを選定、全府省庁39機関・約18万人規模で実証",
-      "summary": "デジタル庁が政府AI基盤「源内（ゲンナイ）」に国産LLM7モデルを選定し、全府省庁39機関・約18万人規模での実証実験を開始する予定だと発表した。政府のAI活用推進と国産LLM育成に向けた重要な取り組みとなる。",
+      "summary": "デジタル庁が政府AI基盤「源内」において7つの国産LLMを選定し、全府省庁39機関・約18万人規模での実証実験を開始した。国産AI推進の観点から重要な政策展開であり、日本のAI自立に向けた大きな一歩となる。",
       "url": "https://ledge.ai/articles/digital_agency_gennai_domestic_llm_selection_government_trial",
       "source": "Ledge.ai",
       "category": "規制・社会",
-      "tags": ["デジタル庁", "国産LLM", "政府AI", "日本"],
-      "published": "2026-04-11"
+      "tags": ["デジタル庁", "国産LLM", "政府AI", "源内"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 15,
+      "title": "Inception Labs、拡散モデルを使った拡散型大規模言語モデル(dLLM)「Mercury Coder」を発表",
+      "summary": "Inception Labsがテキスト生成系では初の商用レベルの拡散型LLM「Mercury Coder」を発表した。従来型LLMと比べて最大10倍の高速生成を実現し、コーディング支援に特化した新世代モデルとして注目を集める。",
+      "url": "https://ledge.ai/articles/mercury_coder_diffusion_llm",
+      "source": "Ledge.ai",
+      "category": "モデル・研究",
+      "tags": ["Mercury Coder", "Inception Labs", "拡散LLM", "dLLM"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 16,
+      "title": "ELYZA、日本語特化の拡散モデルベースのLLM「ELYZA-LLM-Diffusion」を商用利用可能な形で公開",
+      "summary": "ELYZAが日本語特化の拡散モデルベースLLM「ELYZA-LLM-Diffusion」を商用利用可能な形で公開した。Transformerアーキテクチャに代わる新世代の日本語AIモデルとして業界から高い注目を集めている。",
+      "url": "https://ledge.ai/articles/elyza_llm_diffusion_japanese_dllm_release",
+      "source": "Ledge.ai",
+      "category": "モデル・研究",
+      "tags": ["ELYZA", "日本語LLM", "拡散モデル"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 17,
+      "title": "New AI Model Releases News | April, 2026 (STARTUP EDITION)",
+      "summary": "2026年4月の主要AIモデルリリース情報をスタートアップ視点でまとめたレポート。Anthropic・OpenAI・Googleなどの大手に加え、注目スタートアップの新モデルも多数紹介されている。",
+      "url": "https://blog.mean.ceo/new-ai-model-releases-news-april-2026/",
+      "source": "Mean CEO Blog",
+      "category": "モデル・研究",
+      "tags": ["AIモデル", "スタートアップ", "新モデルリリース"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 18,
+      "title": "Google IO 2026: The AI Announcements That Matter",
+      "summary": "Google IO 2026でGemini 4・42.5エクサフロップスのIronwood TPU・AIグラス・Android 17など多くの発表が行われた。AlphabetはAIインフラに年間1,750〜1,850億ドルの資本支出を計画し、AI覇権争いを加速させる。",
+      "url": "https://www.mejba.me/blog/google-io-2026-ai-announcements",
+      "source": "Engr Mejba Ahmed Blog",
+      "category": "モデル・研究",
+      "tags": ["Google", "Gemini", "Google IO", "TPU"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 19,
+      "title": "Designing delightful frontends with GPT-5.4",
+      "summary": "OpenAIの開発者ブログがGPT-5.4を使った洗練されたフロントエンド設計の実践的手法を公開した。OSWorldやWebArenaベンチマークで記録的なスコアを達成したGPT-5.4のUI生成能力と実用的な活用例を紹介している。",
+      "url": "https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4",
+      "source": "OpenAI Developers Blog",
+      "category": "ツール・製品",
+      "tags": ["OpenAI", "GPT-5.4", "フロントエンド開発"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 20,
+      "title": "【2026年4月最新版】Claudeの全機能と料金を超初心者向けに完全解説｜ChatGPT・Geminiとの比較も",
+      "summary": "2026年4月時点のClaudeの全機能と料金体系を超初心者向けに解説したnote記事。Claude Opus 4.6・Sonnet 4.6・Haiku 4.5の3ラインナップとChatGPT・Geminiとの主要な違いが丁寧にまとめられている。",
+      "url": "https://note.com/kakumitsu/n/n95a2228f43ea",
+      "source": "note",
+      "category": "ツール・製品",
+      "tags": ["Claude", "Anthropic", "ChatGPT", "Gemini"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 21,
+      "title": "私の生成AI活用の現在地 2026年4月版",
+      "summary": "2026年4月時点での生成AI活用状況を現場視点でレポートしたnote記事。ChatGPT・Claude・Geminiの実際の使い分けと業務効率化への具体的な貢献についての知見が共有されている。",
+      "url": "https://note.com/bechiko0605/n/ndd6c6f85f097",
+      "source": "note",
+      "category": "ツール・製品",
+      "tags": ["生成AI", "ChatGPT", "Claude", "Gemini"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 22,
+      "title": "【2026年3月最新】生成AI WebAPI 料金比較 - 主要6社モデル一覧",
+      "summary": "2026年3月時点の主要6社の生成AI WebAPI料金を一覧比較したnote記事。OpenAI・Anthropic・Google・Mistral・Cohereなどのトークン単価と性能の費用対効果を開発者視点で整理している。",
+      "url": "https://note.com/fujisan390/n/n50ef4942220d",
+      "source": "note",
+      "category": "ツール・製品",
+      "tags": ["生成AI", "API", "料金比較", "OpenAI", "Anthropic"],
+      "published": "2026-03-15"
+    },
+    {
+      "id": 23,
+      "title": "2026年版｜生成AI勢力図と世界各国の採用状況",
+      "summary": "世界各国における生成AI採用状況と市場シェアを2026年版としてまとめたnote記事。ChatGPTが64.5%、Geminiが21.5%へ急成長し、各地域での導入トレンドと勢力図の変化を分析している。",
+      "url": "https://note.com/witty_ixora1236/n/nb190567f875e",
+      "source": "note",
+      "category": "ビジネス",
+      "tags": ["生成AI", "市場シェア", "ChatGPT", "Gemini"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 24,
+      "title": "ChatGPT・Claude・GeminiのAIエージェント機能の違いとオススメ活用術",
+      "summary": "ChatGPT・Claude・Geminiの三大AIにおけるエージェント機能の違いと活用方法をまとめたnote記事。2026年は「AIエージェント元年」と称され、各ツールで個人利用可能なエージェント機能が本格化した。",
+      "url": "https://note.com/maruking777/n/n0ad45f320884",
+      "source": "note",
+      "category": "ツール・製品",
+      "tags": ["AIエージェント", "ChatGPT", "Claude", "Gemini"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 25,
+      "title": "AI agent trends 2026 report | Google Cloud",
+      "summary": "Google CloudがAIエージェントの最新トレンドレポート2026を公開した。2026年末までに75%の企業がAIエージェントを導入する予定とされ、エンタープライズにおけるAIエージェント活用の実態と展望を詳細に分析している。",
+      "url": "https://cloud.google.com/resources/content/ai-agent-trends-2026",
+      "source": "Google Cloud",
+      "category": "ツール・製品",
+      "tags": ["Google Cloud", "AIエージェント", "エンタープライズAI"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 26,
+      "title": "AIsmiley AI PRODUCTS AWARD 2026 主要12部門のグランプリを発表！",
+      "summary": "AIsmileyが主要12部門のAI製品グランプリを発表した。AIエージェント部門からフィジカルAI部門まで各分野の最優秀AI製品を選定し、2026年のAI産業の現状と注目プレイヤーを示している。",
+      "url": "https://aismiley.co.jp/ai_news/aismiley-ai-products-award-2026/",
+      "source": "AIsmiley",
+      "category": "ツール・製品",
+      "tags": ["AI製品", "アワード", "フィジカルAI"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 27,
+      "title": "2026年のAI戦略を左右する「AIトレンドレポート2026」公開！1万件のデータが示す「現場のリアル」を分析",
+      "summary": "1万件のデータを基にした「AIトレンドレポート2026」が公開された。AIが「見えないインフラ」として社会に浸透する現状と、フィジカルAI・デバイスAI・AIエージェントなど2026年の注目技術トレンドを詳細に解説している。",
+      "url": "https://aismiley.co.jp/ai_news/ai-trend-report-2026/",
+      "source": "AIsmiley",
+      "category": "ビジネス",
+      "tags": ["AIトレンド", "生成AI", "エンタープライズAI"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 28,
+      "title": "Autonomous AI agents 2026: the new rules for business governance",
+      "summary": "自律型AIエージェントの普及に伴う企業ガバナンスの新ルールを特集したRaconteur記事。2026年末には40%の企業アプリがAIエージェントを組み込む見通しの中、リスク管理と意思決定の委任基準の策定が急務となっている。",
+      "url": "https://www.raconteur.net/technology/autonomous-ai-agents-2026-the-new-rules-for-business-governance",
+      "source": "Raconteur",
+      "category": "規制・社会",
+      "tags": ["AIエージェント", "ガバナンス", "規制", "エンタープライズ"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 29,
+      "title": "ChatGPT、シェア22ポイント減の衝撃 Geminiがシェア20％を突破し猛追【2026年最新AIシェア調査】",
+      "summary": "2026年1月のAI市場シェア調査でChatGPTのウェブトラフィックシェアが86.7%から64.5%へと大幅に低下した。Google Geminiは5.7%から21.5%へと約4倍に成長し、AI市場の競争構造が大きく変化している。",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2601/15/news016.html",
+      "source": "ITmedia（@IT）",
+      "category": "ビジネス",
+      "tags": ["ChatGPT", "Gemini", "市場シェア", "OpenAI", "Google"],
+      "published": "2026-01-15"
     },
     {
       "id": 30,
-      "title": "2026年4月最新AIニュース3選 - OpenAI大型調達、Anthropicの防衛的サイバーAI、GoogleのGemini 3.1",
-      "summary": "2026年4月の主要AIニュース3本をQiitaがまとめた記事。OpenAIの1,220億ドル調達、AnthropicのProject GlasswingによるサイバーセキュリティAI、GoogleのGemini 3.1リリースについて日本語で解説している。",
-      "url": "https://qiita.com/hello_giita/items/3d6a8c80f7581f803e20",
-      "source": "Qiita",
+      "title": "Expanding our global operations to India — Anthropic",
+      "summary": "AnthropicがグローバルオペレーションをインドへAI拡大を発表した。急成長するインドのAI市場に本格参入し、現地パートナーとの連携強化を通じてClaudeのアジア圏普及を推進する。",
+      "url": "https://www.anthropic.com/news/expanding-global-operations-to-india",
+      "source": "Anthropic",
+      "category": "ビジネス",
+      "tags": ["Anthropic", "Claude", "グローバル展開"],
+      "published": "2026-03-15"
+    },
+    {
+      "id": 31,
+      "title": "生成AI使い分け完全ガイド｜悩み別おすすめツール診断【2026年版】",
+      "summary": "2026年版の生成AI使い分け完全ガイドを公開したnote記事。悩みや用途別に最適なAIツールを診断できる形式で、ChatGPT・Claude・Gemini・Perplexityなど主要ツールを横断的に比較している。",
+      "url": "https://note.com/samuraijuku_biz/n/n0f91bf7533e9",
+      "source": "note",
+      "category": "ツール・製品",
+      "tags": ["生成AI", "ChatGPT", "Claude", "Gemini"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 32,
+      "title": "OpenAI Google Anthropic Reshape Software Development with AI",
+      "summary": "OpenAI・Google・AnthropicがAIによるソフトウェア開発の再定義を進めている動向を分析。Codex・Claude Code・Gemini Codeなどの開発AIツールが業界標準となりつつあり、エンジニアの働き方が大きく変わっている。",
+      "url": "https://letsdatascience.com/news/openai-google-anthropic-reshape-software-development-with-ai-7db5a11a",
+      "source": "Let's Data Science",
+      "category": "ツール・製品",
+      "tags": ["OpenAI", "Google", "Anthropic", "ソフトウェア開発", "Claude Code"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 33,
+      "title": "2026年卒学生、就職活動でのAI利用倍増。就職活動での利用率は66.6%",
+      "summary": "2026年卒の就活生のAI利用率が前年比2倍の66.6%に達したことが調査で判明した。エントリーシート作成・面接準備・業界研究などにAIを積極的に活用する就活生が急増しており、採用プロセスのAI対応が課題となっている。",
+      "url": "https://aismiley.co.jp/ai_news/2026-new-graduates-job-hunting-ai/",
+      "source": "AIsmiley",
+      "category": "規制・社会",
+      "tags": ["就職活動", "生成AI", "AI利用", "教育"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 34,
+      "title": "ChatGPTの新モデル「GPT-5.2」、GeminiやClaudeと比較してわかったこと",
+      "summary": "Forbes JAPANがChatGPTの最新モデル「GPT-5.2」とGemini・Claudeとの詳細比較を実施した結果を報告。各モデルの強みと弱点、実務での最適な使い分けについてベンチマーク結果を交えて解説されている。",
+      "url": "https://news.yahoo.co.jp/articles/c332a3f23ab0147fdf913b4c5b4e6df68b1e68d1",
+      "source": "Yahoo!ニュース（Forbes JAPAN）",
       "category": "モデル・研究",
-      "tags": ["OpenAI", "Anthropic", "Google", "Gemini"],
-      "published": "2026-04-09"
+      "tags": ["GPT-5.2", "OpenAI", "ChatGPT", "Gemini", "Claude"],
+      "published": "2026-04-15"
+    },
+    {
+      "id": 35,
+      "title": "スタートアップ資金調達サマリー【2026/3/30～4/3】｜先週の調達まとめ一覧",
+      "summary": "2026年3月30日〜4月3日週の国内外スタートアップ資金調達をまとめた週次レポート。AI関連スタートアップへの投資が引き続き活発で、複数の大型ラウンドが完了した週となった。",
+      "url": "https://note.com/zaimo_ai/n/n812a99850772",
+      "source": "note（Zaimo.ai）",
+      "category": "ビジネス",
+      "tags": ["スタートアップ", "資金調達", "AI投資"],
+      "published": "2026-04-03"
     }
   ]
 }
